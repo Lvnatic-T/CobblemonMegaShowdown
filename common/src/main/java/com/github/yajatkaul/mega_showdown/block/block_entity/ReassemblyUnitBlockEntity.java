@@ -140,4 +140,10 @@ public class ReassemblyUnitBlockEntity extends BlockEntity {
     public int getMaxCookTime() {
         return maxCookTime;
     }
+
+    public int getState() {
+        if (isIdle()) return 0;
+        else if (isCooking()) return 1;
+        else return 2;
+    }
 }

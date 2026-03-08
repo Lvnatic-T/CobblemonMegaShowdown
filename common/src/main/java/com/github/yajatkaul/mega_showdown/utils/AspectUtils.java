@@ -3,6 +3,7 @@ package com.github.yajatkaul.mega_showdown.utils;
 import com.cobblemon.mod.common.Cobblemon;
 import com.cobblemon.mod.common.api.battles.model.PokemonBattle;
 import com.cobblemon.mod.common.api.battles.model.actor.ActorType;
+import com.cobblemon.mod.common.api.moves.*;
 import com.cobblemon.mod.common.api.pokemon.PokemonProperties;
 import com.cobblemon.mod.common.api.pokemon.feature.FlagSpeciesFeature;
 import com.cobblemon.mod.common.api.pokemon.feature.StringSpeciesFeature;
@@ -21,6 +22,7 @@ import com.github.yajatkaul.mega_showdown.gimmick.MegaGimmick;
 import com.github.yajatkaul.mega_showdown.tag.MegaShowdownTags;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import kotlin.Unit;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.nbt.Tag;
@@ -42,6 +44,7 @@ public class AspectUtils {
                 new StringSpeciesFeature(aspect_split[0], aspect_split[1]).apply(pokemon);
             }
         }
+        cleanMoveset(pokemon);
     }
 
     public static void applyProperties(Pokemon pokemon, Optional<String> propertyString) {
@@ -50,6 +53,50 @@ public class AspectUtils {
                     properties.apply(pokemon);
                 }
         );
+        cleanMoveset(pokemon);
+    }
+
+    private static void cleanMoveset(Pokemon pokemon) {
+        MoveSet moveSet = pokemon.getMoveSet();
+        BenchedMoves benchedMoves = pokemon.getBenchedMoves();
+
+        moveSet.doWithoutEmitting(() -> {
+            for (int i = 0; i < MoveSet.MOVE_COUNT; i++) {
+                Move move = moveSet.get(i);
+                if (move == null) continue;
+
+                MoveTemplate template = move.getTemplate();
+                boolean isLegal = pokemon.getForm().getMoves().getAllLegalMoves().stream()
+                        .anyMatch(m -> m.getName().equals(template.getName()));
+                boolean isLegacy = pokemon.getForm().getMoves().getLegacyMoves().stream()
+                        .anyMatch(m -> m.getName().equals(template.getName()));
+
+                if (!isLegal && !isLegacy) {
+                    moveSet.setMove(i, null);
+                }
+            }
+            return Unit.INSTANCE;
+        });
+        moveSet.update();
+
+        benchedMoves.doWithoutEmitting(() -> {
+            Iterator<BenchedMove> iterator = benchedMoves.iterator();
+            while (iterator.hasNext()) {
+                BenchedMove benchedMove = iterator.next();
+                MoveTemplate template = benchedMove.getMoveTemplate();
+
+                boolean isLegal = pokemon.getForm().getMoves().getAllLegalMoves().stream()
+                        .anyMatch(m -> m.getName().equals(template.getName()));
+                boolean isLegacy = pokemon.getForm().getMoves().getLegacyMoves().stream()
+                        .anyMatch(m -> m.getName().equals(template.getName()));
+
+                if (!isLegal && !isLegacy) {
+                    iterator.remove();
+                }
+            }
+            return Unit.INSTANCE;
+        });
+        benchedMoves.update();
     }
 
     public static void appendRevertDataPokemon(Effect effect, List<String> aspects, Optional<String> properties, Pokemon pokemon, String tagName) {

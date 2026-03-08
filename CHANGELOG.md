@@ -1,16 +1,5 @@
-# 1.7.0+1.7.3-release
-- Fixed interaction wheel gimmick usage during battle
-- Fixed du fusions bug where you could use it on two fusion mons one by one and it would remove the previous one stored
-- "Allegedly" fixes battle freezes
-- Fixed custom types crashing in multiplayer
-- Fixes for Kyogre and Groudon primal (no more errors in console)
-- Updated Move pools (for legacy moves)
-- Fixed Zamazenta Crowned Mane
-- New Necrozma Models
-- New Solagaleo and Lunala Models
-- Ash cap pikachu fix
-- Mega Metagross claws fix
-- Mega Charizard Y wings fix
-- Zygarde 10% scarf fix
-- French Pinsirite Mistranslation fix
-- Removed Lugia and Ho-Oh custom models
+# 1.7.1+1.7.3-release
+- Fixed lugia, ho-oh anims
+- Added Duraludon, Drednaw, Orbeetle gmax models
+- Added jade compatibility in reassembly unit
+- Fixed moveset issue with fusions and form changes
