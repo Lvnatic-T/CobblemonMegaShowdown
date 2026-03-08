@@ -651,5 +651,7 @@
   "item.mega_showdown.tera_pouch_black": "Tera Pouch Black",
   "tooltip.mega_showdown.tera_pouch.tooltip": "A pouch to store all your tera shards at one place",
 
-  "config.jade.plugin_mega_showdown.jade": "MSD Jade"
+  "config.jade.plugin_mega_showdown.jade": "MSD Jade",
+  "mega_showdown.ui.idle": "Idle",
+  "mega_showdown.ui.ready": "Ready"
 }

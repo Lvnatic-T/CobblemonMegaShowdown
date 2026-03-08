@@ -27,13 +27,21 @@ public enum ReassemblyComponentProvider implements IBlockComponentProvider, ISer
             if (blockEntity != null) {
                 int cookTime = blockAccessor.getServerData().getInt("cookTime");
                 int maxCookTime = blockAccessor.getServerData().getInt("maxCookTime");
+                int state = blockAccessor.getServerData().getInt("state");
 
                 int remainingTicks = maxCookTime - cookTime;
 
                 IElementHelper elements = IElementHelper.get();
                 IElement icon = elements.item(new ItemStack(MegaShowdownItems.ZYGARDE_CUBE), 0.5f).size(new Vec2(10, 10)).translate(new Vec2(0, -1));;
                 iTooltip.add(icon);
-                iTooltip.append(Component.literal(formatTime(remainingTicks)));
+
+                if (state == 0) {
+                    iTooltip.append(Component.translatable("mega_showdown.ui.idle"));
+                } else if (state == 1) {
+                    iTooltip.append(Component.literal(formatTime(remainingTicks)));
+                } else {
+                    iTooltip.append(Component.translatable("mega_showdown.ui.ready"));
+                }
             }
         }
     }
@@ -73,6 +81,7 @@ public enum ReassemblyComponentProvider implements IBlockComponentProvider, ISer
             if (blockEntity != null) {
                 compoundTag.putInt("cookTime", blockEntity.getCookTime());
                 compoundTag.putInt("maxCookTime", blockEntity.getMaxCookTime());
+                compoundTag.putInt("state", blockEntity.getState());
             }
         }
     }
