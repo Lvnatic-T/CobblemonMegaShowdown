@@ -1034,7 +1034,7 @@ public class MegaShowdownItems {
     }
 
     private static RegistrySupplier<Item> registerCustomTeraShards(String name) {
-        return ITEMS.register(name, () -> new CustomTeraShard(new Item.Properties().arch$tab(MegaShowdownTabs.TERA_TAB)));
+        return ITEMS.register(name, () -> new CustomTeraShard(new Item.Properties()));
     }
 
     private static RegistrySupplier<Item> registerZElementalCrystals(String name, ElementalType type) {
