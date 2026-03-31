@@ -7,6 +7,9 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.levelgen.structure.Structure;
+
+import java.util.Set;
 
 public class MegaShowdownTags {
     public static class Blocks {
@@ -36,17 +39,19 @@ public class MegaShowdownTags {
     }
 
     public static class Biomes {
-        public static final TagKey<Biome> sandyKey = TagKey.create(
-                Registries.BIOME,
-                ResourceLocation.tryParse("cobblemon:is_sandy")
+        public static final Set<TagKey<Biome>> PLANT_BIOMES = Set.of(
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_forest")),
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_floral")),
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_plains"))
         );
-        public static final TagKey<Biome> trashKey = TagKey.create(
-                Registries.BIOME,
-                ResourceLocation.tryParse("cobblemon:is_cave")
+        public static final Set<TagKey<Biome>> SANDY_BIOMES = Set.of(
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_sandy")),
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_beach")),
+                TagKey.create(Registries.BIOME, ResourceLocation.tryParse("cobblemon:is_cave"))
         );
-        public static final TagKey<Biome> forestKey = TagKey.create(
-                Registries.BIOME,
-                ResourceLocation.tryParse("cobblemon:is_forest")
+        public static final TagKey<Structure> VILLAGE = TagKey.create(
+                Registries.STRUCTURE,
+                ResourceLocation.tryParse("minecraft:village")
         );
     }
 }

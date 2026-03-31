@@ -24,13 +24,16 @@ import com.github.yajatkaul.mega_showdown.tag.MegaShowdownTags;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import kotlin.Unit;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.nbt.Tag;
 import net.minecraft.server.ServerScoreboard;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.levelgen.structure.Structure;
 
 import java.util.*;
 import java.util.stream.StreamSupport;
@@ -155,16 +158,29 @@ public class AspectUtils {
             if (pokemon.getSpecies().getName().equals("Burmy")) {
                 Holder<Biome> biomeHolder = player.serverLevel().getBiome(player.blockPosition());
 
-                boolean isSandy = biomeHolder.is(MegaShowdownTags.Biomes.sandyKey);
-                boolean isForest = biomeHolder.is(MegaShowdownTags.Biomes.forestKey);
-                boolean isTrash = biomeHolder.is(MegaShowdownTags.Biomes.trashKey);
+                ServerLevel serverLevel = (ServerLevel) player.level();
+                boolean isTrash = serverLevel.structureManager()
+                        .getStructureWithPieceAt(player.blockPosition(), MegaShowdownTags.Biomes.VILLAGE)
+                        .isValid();
 
-                if (isForest) {
+
+                boolean isPlant = false;
+                boolean isSandy = false;
+
+                if (!isTrash) {
+                    isSandy = MegaShowdownTags.Biomes.SANDY_BIOMES
+                            .stream().anyMatch(biomeHolder::is);
+
+                    isPlant = MegaShowdownTags.Biomes.PLANT_BIOMES
+                            .stream().anyMatch(biomeHolder::is);
+                }
+
+                if (isTrash) {
+                    new StringSpeciesFeature("bagworm_cloak", "trash").apply(pokemon);
+                } else if (isPlant) {
                     new StringSpeciesFeature("bagworm_cloak", "plant").apply(pokemon);
                 } else if (isSandy) {
                     new StringSpeciesFeature("bagworm_cloak", "sandy").apply(pokemon);
-                } else if (isTrash) {
-                    new StringSpeciesFeature("bagworm_cloak", "trash").apply(pokemon);
                 }
             }
         }
