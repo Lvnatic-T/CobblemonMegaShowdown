@@ -3,7 +3,7 @@ package com.github.yajatkaul.mega_showdown.mixin.battle;
 import com.cobblemon.mod.common.api.pokedex.PokedexEntryProgress;
 import com.cobblemon.mod.common.client.battle.ActiveClientBattlePokemon;
 import com.cobblemon.mod.common.client.gui.battle.BattleOverlay;
-import com.github.yajatkaul.mega_showdown.client.battle.hud.BattleHud;
+import com.github.yajatkaul.mega_showdown.client.battle.hud.BattleHUD;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
@@ -31,6 +31,6 @@ public abstract class BattleOverlayMixin extends Gui {
         boolean isCompact,
         CallbackInfo info
     ) {
-        BattleHud.drawStatChanges(context, activeBattlePokemon, left, rank, isCompact);
+        BattleHUD.drawStatChanges(context, activeBattlePokemon, left, rank, isCompact);
     }
 }

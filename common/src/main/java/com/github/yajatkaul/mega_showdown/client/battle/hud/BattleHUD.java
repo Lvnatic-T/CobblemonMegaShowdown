@@ -33,7 +33,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
-public class BattleHud {
+public class BattleHUD {
     private static int prevTime = 0;
     private static final Map<UUID, BattlePokemonMemory> memory = new HashMap<>();
     private static final List<TeamPreviewWidget> teamPreviews = List.of(new TeamPreviewWidget(0, 0, true), new TeamPreviewWidget(0, 0, false));

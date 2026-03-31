@@ -372,6 +372,9 @@ public class CobbleEvents {
     }
 
     private static void hookBattleStarted(BattleStartedEvent.Post event) {
+        if (MegaShowdownConfig.debugMode) {
+            event.getBattle().setMute(false);
+        }
         event.getBattle().getOnEndHandlers().add((battle -> {
             battle.getPlayers().forEach(AspectUtils::revertPokemonsIfRequiredBattleEnd);
             return Unit.INSTANCE;
