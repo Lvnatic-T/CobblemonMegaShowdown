@@ -12,14 +12,25 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "common",
-      "level": "4-25",
-      "weight": 2.0,
+      "level": "2-27",
+      "weight": 9.0,
+      "weightMultiplier": {
+        "multiplier": 0.25,
+        "condition": {
+          "timeRange": "night"
+        }
+      },
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
         "biomes": [
           "#cobblemon:is_forest",
-          "#cobblemon:is_jungle",
           "#cobblemon:is_taiga"
+        ]
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_spooky"
         ]
       }
     }

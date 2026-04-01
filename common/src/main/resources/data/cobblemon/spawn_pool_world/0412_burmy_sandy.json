@@ -1,43 +1,90 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "burmy-1",
-      "pokemon": "burmy bagworm_cloak=sandy",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "17-19",
-      "weight": 3.0,
-      "condition": {
-        "biomes": [
-          "biomesoplenty:dryland",
-          "biomesoplenty:wasteland",
-          "biomesoplenty:wasteland_steppe"
-        ]
-      }
-    },
-    {
-      "id": "burmy-2",
-      "pokemon": "burmy bagworm_cloak=sandy",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "5-19",
-      "weight": 2,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_desert"
-        ]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "burmy-sandy-1",
+            "pokemon": "burmy bagworm_cloak=sandy",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 5.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "burmy-sandy-2",
+            "pokemon": "burmy bagworm_cloak=sandy",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 5.4,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "burmy-sandy-3",
+            "pokemon": "burmy bagworm_cloak=sandy",
+            "presets": [
+                "foliage",
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "biomesoplenty:dryland",
+                    "biomesoplenty:wasteland",
+                    "biomesoplenty:wasteland_steppe"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        }
+    ]
 }

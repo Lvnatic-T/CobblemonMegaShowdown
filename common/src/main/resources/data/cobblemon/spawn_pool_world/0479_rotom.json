@@ -9,8 +9,8 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "rare",
-      "level": "20-75",
-      "weight": 7.0,
+      "level": "24-49",
+      "weight": 10.0,
       "condition": {
         "biomes": [
           "#cobblemon:is_overworld"
@@ -29,6 +29,27 @@
           "cobblemon:healing_machine",
           "cobblemon:restoration_tank",
           "cobblemon:fossil_analyzer"
+        ]
+      }
+    },
+    {
+      "id": "rotom-2",
+      "pokemon": "rotom",
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "rare",
+      "level": "24-49",
+      "weight": 10.0,
+      "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "isThundering": true,
+        "biomes": [
+          "#cobblemon:is_overworld"
+        ],
+        "structures": [
+          "#minecraft:village",
+          "#cobblemon:ruin"
         ]
       }
     }

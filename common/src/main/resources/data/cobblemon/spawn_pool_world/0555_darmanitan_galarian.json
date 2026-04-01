@@ -11,16 +11,31 @@
       ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
-      "bucket": "rare",
-      "level": "45-50",
-      "weight": 3,
+      "bucket": "uncommon",
+      "level": "35-54",
+      "weight": 0.6,
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
         "biomes": [
-          "minecraft:frozen_peaks",
-          "minecraft:ice_spikes",
-          "#cobblemon:is_freezing",
-          "#cobblemon:is_cold"
+          "#cobblemon:is_freezing"
+        ]
+      }
+    },
+    {
+      "id": "darmanitan-galarian-2",
+      "pokemon": "darmanitan galarian",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "common",
+      "level": "35-54",
+      "weight": 0.2,
+      "condition": {
+        "biomes": [
+          "#cobblemon:nether/is_frozen"
         ]
       }
     }

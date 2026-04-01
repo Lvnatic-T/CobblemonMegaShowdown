@@ -12,13 +12,14 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "uncommon",
-      "level": "18-33",
-      "weight": 3.0,
+      "level": "16-41",
+      "weight": 10.0,
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "timeRange": "0-5999",
         "biomes": [
-          "#cobblemon:is_plains",
-          "#cobblemon:is_hills"
+          "#cobblemon:is_floral"
         ]
       }
     },
@@ -31,13 +32,14 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "uncommon",
-      "level": "18-33",
-      "weight": 3.0,
+      "level": "16-41",
+      "weight": 10.0,
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "timeRange": "6000-11999",
         "biomes": [
-          "#cobblemon:is_mountain",
-          "#cobblemon:is_jungle"
+          "#cobblemon:is_floral"
         ]
       }
     },
@@ -50,10 +52,12 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "uncommon",
-      "level": "18-33",
-      "weight": 3.0,
+      "level": "16-41",
+      "weight": 10.0,
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "timeRange": "12000-17999",
         "biomes": [
           "#cobblemon:is_floral"
         ]
@@ -67,12 +71,14 @@
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "uncommon",
-      "level": "18-33",
-      "weight": 3.0,
+      "level": "16-41",
+      "weight": 10.0,
       "condition": {
-        "canSeeSky": true,
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
+        "timeRange": "18000-23999",
         "biomes": [
-          "#cobblemon:is_forest"
+          "#cobblemon:is_floral"
         ]
       }
     }

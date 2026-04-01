@@ -7,43 +7,25 @@
             "id": "dottler-1",
             "pokemon": "dottler",
             "presets": [
-                "natural",
-                "treetop"
+				"natural",
+                "foliage"
             ],
             "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
-            "level": "9-20",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "22-36",
             "weight": 2.0,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_forest"
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains"
                 ]
             },
             "anticondition": {
                 "biomes": [
-                    "#cobblemon:is_spooky"
-                ]
-            }
-        },
-        {
-            "id": "dottler-2",
-            "pokemon": "dottler",
-            "presets": [
-				"natural",
-                "foliage",
-                "treetop"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
-            "level": "9-20",
-            "weight": 2.0,
-            "condition": {
-                "canSeeSky": true,
-                "biomes": [
-                    "#cobblemon:is_plains"
+                    "#cobblemon:is_freezing"
                 ]
             }
         }

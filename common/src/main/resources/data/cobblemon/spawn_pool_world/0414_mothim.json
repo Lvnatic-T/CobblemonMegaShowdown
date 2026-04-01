@@ -1,41 +1,93 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "mothim-1",
-      "pokemon": "mothim",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "rare",
-      "level": "45-65",
-      "weight": 15.0,
-      "condition": {
-        "biomes": [
-          "biomesoplenty:maple_woods"
-        ]
-      }
-    },
-    {
-      "id": "mothim-2",
-      "pokemon": "mothim",
-      "type": "pokemon",
-      "presets": [
-        "natural"
-      ],
-      "spawnablePositionType": "grounded",
-      "bucket": "rare",
-      "level": "28-45",
-      "weight": 2,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_forest"
-        ]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "mothim-1",
+            "pokemon": "mothim",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-46",
+            "weight": 0.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_desert"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "mothim-2",
+            "pokemon": "mothim",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-46",
+            "weight": 0.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "mothim-3",
+            "pokemon": "mothim",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-46",
+            "weight": 0.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "biomesoplenty:aspen_glade",
+                    "biomesoplenty:dryland",
+                    "biomesoplenty:jacaranda_glade",
+                    "biomesoplenty:maple_woods",
+                    "biomesoplenty:wasteland",
+                    "biomesoplenty:wasteland_steppe"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        }
+    ]
 }

@@ -1,42 +1,60 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "wormadam-1",
-      "pokemon": "wormadam bagworm_cloak=trash",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "35-55",
-      "weight": 15.0,
-      "condition": {
-        "biomes": [
-          "biomesoplenty:jacaranda_glade",
-          "biomesoplenty:maple_woods"
-        ]
-      }
-    },
-    {
-      "id": "wormadam-2",
-      "pokemon": "wormadam bagworm_cloak=trash",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "15-32",
-      "weight": 2,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_floral"
-        ]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "wormadam-trash-1",
+            "pokemon": "wormadam bagworm_cloak=trash",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-46",
+            "weight": 0.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "wormadam-trash-2",
+            "pokemon": "wormadam bagworm_cloak=trash",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-46",
+            "weight": 0.5,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "biomesoplenty:jacaranda_glade",
+                    "biomesoplenty:maple_woods"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        }
+    ]
 }

@@ -7,22 +7,25 @@
             "id": "orbeetle-1",
             "pokemon": "orbeetle",
             "presets": [
-                "natural"
+				"natural",
+                "foliage"
             ],
             "type": "pokemon",
             "spawnablePositionType": "grounded",
-            "bucket": "rare",
-            "level": "27-39",
+            "bucket": "common",
+            "level": "30-49",
             "weight": 1.0,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_temperate"
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains"
                 ]
             },
             "anticondition": {
                 "biomes": [
-                    "#cobblemon:is_spooky"
+                    "#cobblemon:is_freezing"
                 ]
             }
         }

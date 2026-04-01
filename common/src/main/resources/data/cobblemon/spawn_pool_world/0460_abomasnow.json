@@ -11,13 +11,15 @@
       ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "42-55",
-      "weight": 7.0,
+      "bucket": "common",
+      "level": "40-50",
+      "weight": 0.6,
       "condition": {
+        "minSkyLight": 8,
+        "maxSkyLight": 15,
         "biomes": [
-          "#cobblemon:is_snowy_taiga",
-          "#cobblemon:is_snowy_forest"
+          "#cobblemon:is_snowy_forest",
+          "#cobblemon:is_snowy_taiga"
         ]
       }
     }

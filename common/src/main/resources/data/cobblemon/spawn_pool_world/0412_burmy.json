@@ -1,41 +1,61 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "burmy-1",
-      "pokemon": "burmy bagworm_cloak=plant",
-      "type": "pokemon",
-      "presets": [
-        "natural"
-      ],
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "17-19",
-      "weight": 15.0,
-      "condition": {
-        "biomes": [
-          "biomesoplenty:aspen_glade"
-        ]
-      }
-    },
-    {
-      "id": "burmy-2",
-      "pokemon": "burmy bagworm_cloak=plant",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "5-19",
-      "weight": 2,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_forest"
-        ]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "burmy-plant-1",
+            "pokemon": "burmy bagworm_cloak=plant",
+            "presets": [
+                "foliage",
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "burmy-plant-2",
+            "pokemon": "burmy bagworm_cloak=plant",
+            "presets": [
+                "foliage",
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "biomesoplenty:aspen_glade"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        }
+    ]
 }

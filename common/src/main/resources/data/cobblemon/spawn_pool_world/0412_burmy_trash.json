@@ -1,42 +1,60 @@
 {
-  "enabled": true,
-  "neededInstalledMods": [],
-  "neededUninstalledMods": [],
-  "spawns": [
-    {
-      "id": "burmy-1",
-      "pokemon": "burmy bagworm_cloak=trash",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "7-19",
-      "weight": 15.0,
-      "condition": {
-        "biomes": [
-          "biomesoplenty:jacaranda_glade",
-          "biomesoplenty:maple_woods"
-        ]
-      }
-    },
-    {
-      "id": "burmy-2",
-      "pokemon": "burmy bagworm_cloak=trash",
-      "presets": [
-        "natural"
-      ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "common",
-      "level": "5-19",
-      "weight": 2,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_floral"
-        ]
-      }
-    }
-  ]
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "burmy-trash-1",
+            "pokemon": "burmy bagworm_cloak=trash",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "burmy-trash-2",
+            "pokemon": "burmy bagworm_cloak=trash",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "1-25",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "biomesoplenty:jacaranda_glade",
+                    "biomesoplenty:maple_woods"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#minecraft:village"
+                ]
+            }
+        }
+    ]
 }
