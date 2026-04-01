@@ -87,7 +87,7 @@ public class PokemonRendererMixin {
             }
         }
 
-        boolean dmax_aspect = pokemon.getAspects().contains("msd:dmax");
+        boolean dmax_aspect = pokemon.getAspects().contains("msd:dmax") || pokemon.getAspects().contains("gmax");
 
         if (aspect.isPresent()) {
             if (MegaShowdownConfig.teraHats) {

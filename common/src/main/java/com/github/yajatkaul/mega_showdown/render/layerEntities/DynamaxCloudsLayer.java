@@ -37,7 +37,13 @@ public class DynamaxCloudsLayer extends LayerEntity {
         state.setCurrentAspects(aspects);
 
         Map<String, MatrixWrapper> locatorStates = clientDelegate.getLocatorStates();
-        MatrixWrapper headLocator = locatorStates.get("head");
+
+        MatrixWrapper headLocator;
+        if (locatorStates.containsKey("clouds_loc")) {
+            headLocator = locatorStates.get("clouds_loc");
+        } else {
+            headLocator = locatorStates.get("head");
+        }
 
         if (headLocator == null) return;
 
