@@ -17,7 +17,7 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "timeRange": "0-5999",
+        "timeRange": "morning",
         "biomes": [
           "#cobblemon:is_floral"
         ]
@@ -37,7 +37,7 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "timeRange": "6000-11999",
+        "timeRange": "5000-10999",
         "biomes": [
           "#cobblemon:is_floral"
         ]
@@ -57,7 +57,7 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "timeRange": "12000-17999",
+        "timeRange": "11000-16999",
         "biomes": [
           "#cobblemon:is_floral"
         ]
@@ -76,7 +76,7 @@
       "condition": {
         "minSkyLight": 8,
         "maxSkyLight": 15,
-        "timeRange": "18000-23999",
+        "timeRange": "17000-22999",
         "biomes": [
           "#cobblemon:is_floral"
         ]
