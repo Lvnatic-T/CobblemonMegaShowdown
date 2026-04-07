@@ -8,14 +8,7 @@
       ],
       "poser": "cobblemon:blastoisegmax",
       "model": "cobblemon:blastoise_gigantamax.geo",
-      "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax.png"
     },
     {
       "aspects": [
@@ -24,14 +17,7 @@
       ],
       "poser": "cobblemon:blastoisegmax",
       "model": "cobblemon:blastoise_gigantamax.geo",
-      "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0009_blastoise/blastoise_gigantamax_shiny.png"
     }
   ]
 }

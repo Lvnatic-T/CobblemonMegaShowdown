@@ -8,28 +8,14 @@
       ],
       "poser": "cobblemon:butterfree_gigantamax",
       "model": "cobblemon:butterfree_gmax.geo",
-      "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax.png"
     },
     {
       "aspects": [
         "gmax",
         "shiny"
       ],
-      "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax_shiny_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0012_butterfree/butterfree_gmax_shiny.png"
     }
   ]
 }

@@ -9,11 +9,6 @@
       "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax.png",
       "layers": [
         {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive.png",
-          "emissive": true
-        },
-        {
           "name": "glow",
           "emissive": true,
           "texture": {
@@ -32,11 +27,6 @@
       "aspects": ["gmax", "shiny"],
       "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_shiny.png",
       "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive.png",
-          "emissive": true
-        },
         {
           "name": "glow",
           "emissive": true,

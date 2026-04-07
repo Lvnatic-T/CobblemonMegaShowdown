@@ -6,14 +6,7 @@
       "aspects": ["gmax"],
       "poser": "cobblemon:rillaboomgmax",
       "model": "cobblemon:rillaboom_gigantamax.geo",
-      "texture": "cobblemon:textures/pokemon/0812_rillaboom/rillaboom_gigantamax.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0812_rillaboom/rillaboom_gigantamax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0812_rillaboom/rillaboom_gigantamax.png"
     },
     {
       "aspects": ["shiny", "gmax"],

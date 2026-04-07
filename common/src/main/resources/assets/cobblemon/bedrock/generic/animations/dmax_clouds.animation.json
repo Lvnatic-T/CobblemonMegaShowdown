@@ -1,14 +1,13 @@
 {
-  "format_version": "1.8.0",
-  "animations": {
-    "animation.dmax_clouds.idle": {
-      "loop": true,
-      "bones": {
-        "dmax_clouds2": {
-          "rotation": [0, "0-math.mod(q.anim_time*0.05, 1)*360", 0],
-          "scale": 0.5
-        }
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dmax_clouds.idle": {
+			"loop": true,
+			"bones": {
+				"main_cloud_groups": {
+					"rotation": [0, "math.sin(query.anim_time*90*0.0001)*90000", 0]
+				}
+			}
+		}
+	}
 }

@@ -6,25 +6,11 @@
       "aspects": ["gmax"],
       "poser": "cobblemon:pikachu_gigantamax",
       "model": "cobblemon:pikachu_gigantamax.geo",
-      "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax.png"
     },
     {
       "aspects": ["gmax", "shiny"],
-      "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax_emissive.png",
-          "emissive": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0025_pikachu/pikachu_gigantamax_shiny.png"
     }
   ]
 }
