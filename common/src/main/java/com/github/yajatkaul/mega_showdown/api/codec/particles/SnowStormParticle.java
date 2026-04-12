@@ -4,6 +4,7 @@ import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.github.yajatkaul.mega_showdown.MegaShowdown;
 import com.github.yajatkaul.mega_showdown.api.codec.Effect;
+import com.github.yajatkaul.mega_showdown.api.event.MSDFormChanging;
 import com.github.yajatkaul.mega_showdown.utils.AspectUtils;
 import com.github.yajatkaul.mega_showdown.utils.PokemonBehaviourHelper;
 import com.mojang.serialization.Codec;
@@ -60,8 +61,25 @@ public record SnowStormParticle(
         processTransformation(context, aspects, properties, other, battlePokemon, false);
     }
 
-    private void processTransformation(PokemonEntity context, List<String> aspects, Optional<String> properties, PokemonEntity other,
-                                       BattlePokemon battlePokemon, boolean isApply) {
+    private void processTransformation(
+            PokemonEntity context,
+            List<String> aspects,
+            Optional<String> properties,
+            PokemonEntity other,
+            BattlePokemon battlePokemon,
+            boolean isApply
+    ) {
+        MSDFormChanging.FormChangeEvent event =
+                new MSDFormChanging.FormChangeEvent(context, battlePokemon, null);
+
+        MSDFormChanging.EVENT.invoker().onFormChange(event);
+
+        if (event.isCancelled()) {
+            return;
+        }
+
+        boolean wasInBattle = context.isBattling();
+
         context.setNoAi(true);
 
         CompoundTag pokemonPersistentData = context.getPokemon().getPersistentData();
@@ -81,6 +99,7 @@ public record SnowStormParticle(
         Optional<Float> delay = isApply ? apply_after : revert_after;
 
         playSound(context, isApply);
+
         animations.ifPresent(animation -> {
             if (isApply) {
                 animation.applyAnimations(context);
@@ -89,26 +108,50 @@ public record SnowStormParticle(
             }
         });
 
-        particle.ifPresentOrElse((particles) -> {
+        Runnable finish = () -> {
+            boolean nowInBattle = context.isBattling();
+
+            if (wasInBattle != nowInBattle) {
+                pokemonPersistentData.putBoolean("form_changing", false);
+                return;
+            }
+
+            applyAspectsAndCleanup(
+                    context,
+                    aspects,
+                    properties,
+                    pokemonPersistentData,
+                    battlePokemon
+            );
+        };
+
+        particle.ifPresentOrElse(particles -> {
             ResourceLocation particleId = ResourceLocation.tryParse(particles);
+
             if (particleId == null) {
-                MegaShowdown.LOGGER.error("Invalid snowstorm {} particle{}",
+                MegaShowdown.LOGGER.error(
+                        "Invalid snowstorm {} particle{}",
                         isApply ? "apply" : "revert",
-                        battlePokemon != null ? " during battle" : "");
+                        battlePokemon != null ? " during battle" : ""
+                );
                 return;
             }
 
             PokemonBehaviourHelper.Companion.snowStormPartileSpawner(
-                    context, particleId, sourceParticles.orElse(null), other, targetParticles.orElse(null)
+                    context,
+                    particleId,
+                    sourceParticles.orElse(null),
+                    other,
+                    targetParticles.orElse(null)
             );
-        }, () -> applyAspectsAndCleanup(context, aspects, properties, pokemonPersistentData, battlePokemon));
+        }, finish);
 
         delay.ifPresentOrElse(
                 delayValue -> context.after(delayValue, () -> {
-                    applyAspectsAndCleanup(context, aspects, properties, pokemonPersistentData, battlePokemon);
+                    finish.run();
                     return Unit.INSTANCE;
                 }),
-                () -> applyAspectsAndCleanup(context, aspects, properties, pokemonPersistentData, battlePokemon)
+                finish
         );
     }
 
