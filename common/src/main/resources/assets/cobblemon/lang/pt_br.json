@@ -180,6 +180,7 @@
   "cobblemon.ui.pokedex.info.form.rainbow-swirl": "Redemoinho Arco-íris",
   "cobblemon.ui.pokedex.info.form.stellar": "Forma Estelar",
   "cobblemon.ui.pokedex.info.form.terastal": "Forma Terastal",
+  "cobblemon.ui.pokedex.info.form.zygarde-10%": "Forma 10%",
   "cobblemon.battle.weather.desolateland.start": "A luz solar se tornou extremamente forte!",
   "cobblemon.battle.weather.desolateland": "A luz solar se tornou extremamente forte!",
   "cobblemon.battle.weather.desolateland.end": "A luz solar forte desapareceu.",
@@ -685,6 +686,7 @@
   "cobblemon.battle.start.quarkdrivespe": "Velocidade de %1$s aumentou!",
   "cobblemon.battle.damage.gulpmissile": "%1$s jogou o Arrokuda no oponente",
   "cobblemon.battle.activate.gmaxcentiferno": "%1$s ficou preso no vórtice de fogo!",
+  "cobblemon.battle.activate.gmaxsandblast": "%1$s é fustigado pela tempestade de areia!",
   "cobblemon.battle.start.gmaxchistrike": "%1$s concentrou-se intensamente!",
   "cobblemon.battle.sidestart.ally.gmaxvinelash": "As vinhas de %1$s foram colocadas no campo de batalha!",
   "cobblemon.battle.sidestart.ally.gmaxvolcalith": "%1$s foi queimado!",
@@ -707,11 +709,14 @@
   "cobblemon.battle.sideend.opponent.gmaxsteelsurge": "Os espinhos foram limpos.",
   "cobblemon.battle.sideend.opponent.gmaxcannonade": "O vórtice desapareceu.",
   "cobblemon.battle.end.gmaxcentiferno": "O vórtice de fogo desapareceu.",
+  "cobblemon.battle.end.gmaxsandblast": "A tempestade de areia cessou.",
   "cobblemon.battle.damage.gmaxvinelash": "%1$s sofreu dano das vinhas!",
   "cobblemon.battle.damage.gmaxwildfire": "%1$s foi ferido pelo fogo!",
-  "cobblemon.battle.damage.gmaxvolcalith": "%1$s foi ferido por sua queimadura!",
+  "cobblemon.battle.damage.gmaxvolcalith": "%1$s foi ferido pelas pedras!",
   "cobblemon.battle.damage.gmaxcentiferno": "%1$s está ferido pelo vórtice de fogo!",
   "cobblemon.battle.damage.gmaxcannonade": "%1$s está ferido pelo vórtice!",
+  "cobblemon.battle.damage.gmaxsteelsurge": "%1$s foi ferido pelos espinhos!",
+  "cobblemon.battle.damage.gmaxsandblast": "%1$s foi ferido por uma tempestade de areia!",
   "cobblemon.battle.item.gmaxreplenish": "%1$s reabasteceu seu %2$s!",
   "cobblemon.battle.ultra": "%1$s recuperou seu verdadeiro poder através da Ultra Explosão!",
   "cobblemon.ui.stats.dynamax_level": "Nível Dynamax",
@@ -817,7 +822,7 @@
 
   "cobblemon.move.thunderclap": "Estrondo do Trovão",
   "cobblemon.move.thunderclap.desc": "Geralmente vai primeiro. Falha se o alvo não estiver atacando.",
-
+  
   "cobblemon.move.mightycleave": "Corte Poderoso",
   "cobblemon.move.mightycleave.desc": "Ignora proteção sem quebrá-la.",
 

@@ -649,5 +649,18 @@
   "item.mega_showdown.tera_pouch_green": "Bolsa Tera Verde",
   "item.mega_showdown.tera_pouch_red": "Bolsa Tera Vermelha",
   "item.mega_showdown.tera_pouch_black": "Bolsa Tera Preta",
-  "tooltip.mega_showdown.tera_pouch.tooltip": "Uma bolsa para guardar todos os seus fragmentos tera em um só lugar"
+  "tooltip.mega_showdown.tera_pouch.tooltip": "Uma bolsa para guardar todos os seus fragmentos tera em um só lugar",
+
+  "config.jade.plugin_mega_showdown.jade": "MSD Jade",
+  "ui.mega_showdown.idle": "Ociosa",
+  "ui.mega_showdown.ready": "Pronto",
+
+  "gui.battle.mega_showdown.ability": "Habilidade",
+  "gui.battle.mega_showdown.ability.temp": "%1$s (%2$s)",
+  "gui.battle.mega_showdown.field.empty": "---",
+  "gui.battle.mega_showdown.field.unknown": "???",
+  "gui.battle.mega_showdown.form": "Forma",
+  "gui.battle.mega_showdown.item": "Item",
+  "gui.battle.mega_showdown.move.pp": "%1$s / %2$s",
+  "gui.battle.mega_showdown.moves": "Movimentos"
 }
