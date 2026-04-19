@@ -10,7 +10,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_red_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_red.png",
           "emissive": true,
           "translucent": true
         },
@@ -30,7 +30,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_orange_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_orange.png",
           "emissive": true,
           "translucent": true
         },
@@ -50,7 +50,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_yellow_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_yellow.png",
           "emissive": true,
           "translucent": true
         },
@@ -70,7 +70,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_green_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_green.png",
           "emissive": true,
           "translucent": true
         },
@@ -90,7 +90,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_blue_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_blue.png",
           "emissive": true,
           "translucent": true
         },
@@ -110,7 +110,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_indigo_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_indigo.png",
           "emissive": true,
           "translucent": true
         },
@@ -130,7 +130,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_violet_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_violet.png",
           "emissive": true,
           "translucent": true
         },
@@ -150,7 +150,7 @@
       "layers": [
         {
           "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_shiny_core.png",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_shiny.png",
           "emissive": true,
           "translucent": true
         },

@@ -1,0 +1,12 @@
+{
+  "pokemon": "machamp",
+  "size_config": {
+    "Gmax": {
+      "msd:dmax": {
+        "scale": [0.35, 0.35, 0.35],
+        "translate": [-0.09, -0.72, -0.12],
+        "rotation": [0.0, 0.0, 0.0]
+      }
+    }
+  }
+}

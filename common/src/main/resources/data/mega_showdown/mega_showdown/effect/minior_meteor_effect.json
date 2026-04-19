@@ -11,10 +11,9 @@
   "snowstorm": {
     "source_apply": ["root"],
     "particle_apply": "cobblemon:minior_effect",
-    "apply_after": 1.75,
     "animations": {
-      "animations_apply": ["form_change"]
+      "animations_apply": ["form_change_meteor"]
     }
   },
-  "battle_pause_apply": 1.92
+  "battle_pause_apply": 1.55
 }

@@ -9,8 +9,99 @@
       "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
       "layers": [
         {
-          "name": "glow",
-          "texture": "cobblemon:textures/pokemon/0774_minior/minior_emissive.png",
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_red.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "orange-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_orange.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "yellow-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_yellow.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "green-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_green.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "blue-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_blue.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "indigo-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_indigo.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "violet-core"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_violet.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["meteor-form", "shiny"],
+      "poser": "cobblemon:minior",
+      "model": "cobblemon:minior.geo",
+      "texture": "cobblemon:textures/pokemon/0774_minior/minior.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0774_minior/minior_shiny.png",
           "emissive": true
         }
       ]

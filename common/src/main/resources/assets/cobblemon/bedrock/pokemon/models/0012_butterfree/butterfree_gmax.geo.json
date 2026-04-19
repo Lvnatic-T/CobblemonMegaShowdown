@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "butterfree",
-					"pivot": [0, 10, 0]
+					"pivot": [0, -5, 0]
 				},
 				{
 					"name": "body",
@@ -21,7 +21,7 @@
 					"pivot": [0, 19, 0],
 					"cubes": [
 						{"origin": [-4, 15, -3.5], "size": [8, 7, 6], "uv": [100, 0]},
-						{"origin": [-6, 13, 2.5], "size": [12, 11, 0], "uv": [64, 100]}
+						{"origin": [-6, 13, 2.7], "size": [12, 11, 0], "uv": [64, 100]}
 					]
 				},
 				{
@@ -242,7 +242,7 @@
 				{
 					"name": "wings",
 					"parent": "body",
-					"pivot": [0, 21, 2.75]
+					"pivot": [0, 21, 2.8]
 				},
 				{
 					"name": "wing_left_top",

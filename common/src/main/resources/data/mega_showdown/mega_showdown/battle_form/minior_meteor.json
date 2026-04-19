@@ -6,5 +6,5 @@
       "aspects": ["meteor_shield=meteor"]
     }
   },
-  "effect": "mega_showdown:minior_effect"
+  "effect": "mega_showdown:minior_meteor_effect"
 }

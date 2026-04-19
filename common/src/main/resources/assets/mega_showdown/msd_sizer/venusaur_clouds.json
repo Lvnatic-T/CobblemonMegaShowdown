@@ -1,0 +1,12 @@
+{
+  "pokemon": "venusaur",
+  "size_config": {
+    "Gmax": {
+      "msd:dmax": {
+        "scale": [0.5, 0.5, 0.5],
+        "translate": [-0.1, 0.5, 0.15],
+        "rotation": [0.0, 0.0, 0.0]
+      }
+    }
+  }
+}

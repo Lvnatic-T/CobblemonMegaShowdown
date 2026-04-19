@@ -9,12 +9,11 @@
       "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax.png",
       "layers": [
         {
-          "name": "glow",
+          "name": "mane",
           "emissive": true,
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_1.png",
-              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_2.png"
+              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_1.png"
             ],
             "fps": 9,
             "loop": true
@@ -28,12 +27,11 @@
       "texture": "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_shiny.png",
       "layers": [
         {
-          "name": "glow",
+          "name": "mane",
           "emissive": true,
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_1.png",
-              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_2.png"
+              "cobblemon:textures/pokemon/0849_toxtricity/toxtricity_gigantamax_emissive_1.png"
             ],
             "fps": 9,
             "loop": true
