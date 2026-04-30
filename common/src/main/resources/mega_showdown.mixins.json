@@ -41,6 +41,8 @@
     "battle.ShowdownInterpreterMixin",
     "battle.ShowdownSpeciesMixin",
     "battle.StartInstructionMixin",
+    "battle.instructions.AbilityInstructionMixin",
+    "battle.instructions.BagItemInstructionMixin",
     "minecraft.ItemStackMixin",
     "packet.CobblemonNetworkMixin",
     "packet.MovePartyPokemonToPCHandlerMixin"
