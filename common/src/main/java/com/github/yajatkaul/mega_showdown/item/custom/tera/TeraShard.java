@@ -24,6 +24,12 @@ public class TeraShard extends PokemonSelectingItem {
 
     @Override
     public @Nullable InteractionResultHolder<ItemStack> applyToPokemon(@NotNull ServerPlayer player, @NotNull ItemStack itemStack, @NotNull Pokemon pokemon) {
+        if (pokemon.getSpecies().getName().equals("Ogerpon") ||
+                !pokemon.getSpecies().getName().equals("Terapagos") ||
+                    pokemon.getTeraType() == teraType) {
+            return InteractionResultHolder.pass(itemStack);
+        }
+
         final int required_shards = MegaShowdownConfig.teraShardRequired;
 
         if (itemStack.getCount() >= required_shards) {

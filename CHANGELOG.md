@@ -1,3 +1,2 @@
-# 1.8.2+1.7.3-release
-- Added blue dmax clouds for calyrex
-- Fixed gmax pikachu crash
+# 1.8.3+1.7.3-release
+- Fixed terapagos and ogerpon tera type being changed
