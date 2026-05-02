@@ -4,8 +4,10 @@ import com.cobblemon.mod.common.api.battles.interpreter.BattleContext;
 import com.cobblemon.mod.common.api.moves.Move;
 import com.cobblemon.mod.common.api.pokemon.PokemonPropertyExtractor;
 import com.cobblemon.mod.common.api.pokemon.status.Status;
+import com.cobblemon.mod.common.api.types.ElementalTypes;
 import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
 import com.cobblemon.mod.common.pokemon.status.PersistentStatusContainer;
+import com.github.yajatkaul.mega_showdown.MegaShowdown;
 import com.github.yajatkaul.mega_showdown.api.lilycobble.pokemon.PokemonPropertiesSupplier;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -77,6 +79,7 @@ public record BattlePokemonState(
         Map<String, Integer> statChanges = new HashMap<>();
         Collection<BattleContext> boosts = pokemon.getContextManager().get(BattleContext.Type.BOOST);
         Collection<BattleContext> unboosts = pokemon.getContextManager().get(BattleContext.Type.UNBOOST);
+        Collection<BattleContext> volatiles = pokemon.getContextManager().get(BattleContext.Type.VOLATILE);
 
         if (boosts != null) {
             for (BattleContext boost : boosts) {
@@ -87,6 +90,19 @@ public record BattlePokemonState(
         if (unboosts != null) {
             for (BattleContext unboost : unboosts) {
                 statChanges.compute(unboost.getId(), (key, value) -> (value == null ? 0 : value) - 1);
+            }
+        }
+
+        if (volatiles != null) {
+            for (BattleContext vol : volatiles) {
+                switch (vol.getId()) {
+                    case "focusenergy" -> statChanges.compute("crt",(key, value) -> (value == null ? 0 : value) + 2);
+                    case "dragoncheer" -> {
+                        boolean isDragon = pokemon.getEffectedPokemon().getPrimaryType() == ElementalTypes.DRAGON || pokemon.getEffectedPokemon().getSecondaryType() == ElementalTypes.DRAGON;
+                        statChanges.compute("crt",(key, value) -> (value == null ? 0 : value) + (isDragon ? 2 : 1));
+                    }
+                    default -> {}
+                }
             }
         }
 
