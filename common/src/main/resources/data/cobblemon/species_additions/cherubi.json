@@ -1,0 +1,34 @@
+{
+  "implemented": true,
+  "target": "cobblemon:cherubi",
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cherubi",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
+}

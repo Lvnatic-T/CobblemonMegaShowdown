@@ -3,9 +3,6 @@
   "showdown_form_change_id": "zen",
   "aspect_conditions": {
     "apply": {
-      "aspect": {
-        "blacklist_aspects": [["galarian"]]
-      },
       "aspects": ["blazing_mode=zen"]
     },
     "revert": {

@@ -6,7 +6,7 @@
       "aspects": ["missile_form=none"]
     },
     "revert": {
-      "aspects": ["missile_form=gulping"]
+      "aspects": ["missile_form=none"]
     }
   },
   "effect": "mega_showdown:end_rod"

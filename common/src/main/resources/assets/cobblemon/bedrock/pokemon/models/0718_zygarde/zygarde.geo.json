@@ -42,7 +42,7 @@
 					]
 				},
 				{
-					"name": "tail4",
+					"name": "tail3",
 					"parent": "tail2",
 					"pivot": [0, 3, 12],
 					"cubes": [
@@ -50,8 +50,8 @@
 					]
 				},
 				{
-					"name": "tail3",
-					"parent": "tail4",
+					"name": "tail4",
+					"parent": "tail3",
 					"pivot": [0, 4, 22],
 					"cubes": [
 						{"origin": [-8.5, 2, 21], "size": [17, 4, 10], "inflate": 0.03, "uv": [114, 84]}
@@ -59,7 +59,7 @@
 				},
 				{
 					"name": "tail5",
-					"parent": "tail3",
+					"parent": "tail4",
 					"pivot": [0, 4.5, 31],
 					"cubes": [
 						{"origin": [-9, 2.5, 30], "size": [18, 3, 10], "inflate": 0.02, "uv": [102, 101]}
@@ -95,17 +95,12 @@
 					]
 				},
 				{
-					"name": "Ztail_left3",
+					"name": "Ztail_right2",
 					"parent": "tail7",
 					"pivot": [-4, 4, 48],
 					"cubes": [
 						{"origin": [-6, 3, 47], "size": [4, 2, 8], "uv": [0, 148]}
 					]
-				},
-				{
-					"name": "Ztail_right2",
-					"parent": "tail7",
-					"pivot": [-4, 4, 48]
 				},
 				{
 					"name": "Ztail_left",
@@ -310,6 +305,15 @@
 					]
 				},
 				{
+					"name": "head_locator",
+					"parent": "neck2",
+					"pivot": [0, 58, 1.25],
+					"rotation": [-90, 0, 0],
+					"locators": {
+						"head": [0, 58, 1.25]
+					}
+				},
+				{
 					"name": "head",
 					"parent": "neck2",
 					"pivot": [0, 62, 1.2],
@@ -327,10 +331,7 @@
 						{"origin": [-9.5, 69, -6.8], "size": [19, 11, 8], "inflate": 0.01, "uv": [77, 0]},
 						{"origin": [9.5, 71, -2.775], "size": [4, 9, 0], "pivot": [9.5, 74, -2.775], "rotation": [0, 50, 0], "uv": [81, 139]},
 						{"origin": [-13.5, 71, -2.775], "size": [4, 9, 0], "pivot": [-9.5, 74, -2.775], "rotation": [0, -50, 0], "uv": [90, 139]}
-					],
-					"locators": {
-						"head": [0, 74, 1]
-					}
+					]
 				},
 				{
 					"name": "antenna",

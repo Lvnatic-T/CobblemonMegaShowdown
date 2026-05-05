@@ -110,14 +110,6 @@
         "look",
         "q.bedrock('reshiram', 'fly')"
       ]
-    },
-    "sleep": {
-      "poseTypes": [
-        "SLEEP"
-      ],
-      "animations": [
-        "q.bedrock('reshiram', 'sleep')"
-      ]
     }
   }
 }
