@@ -1,8 +1,6 @@
 {
   "pokemon.minior.cry": {
-    "sounds": [
-      "cobblemon:pokemon/minior/cry"
-    ]
+    "sounds": ["cobblemon:pokemon/minior/cry"]
   },
   "pokemon.arceus.cry": {
     "sounds": [
@@ -473,6 +471,14 @@
       {
         "name": "cobblemon:pokemon/gallade/gallade_mega_cry",
         "volume": 0.8
+      }
+    ]
+  },
+  "pokemon.zygardecore.cry": {
+    "sounds": [
+      {
+        "name": "cobblemon:pokemon/zygarde/zygarde_core",
+        "volume": 1.0
       }
     ]
   }

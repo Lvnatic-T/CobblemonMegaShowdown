@@ -110,14 +110,6 @@
         "look",
         "q.bedrock('zekrom', 'fly')"
       ]
-    },
-    "sleep": {
-      "poseTypes": [
-        "SLEEP"
-      ],
-      "animations": [
-        "q.bedrock('zekrom', 'sleep')"
-      ]
     }
   }
 }

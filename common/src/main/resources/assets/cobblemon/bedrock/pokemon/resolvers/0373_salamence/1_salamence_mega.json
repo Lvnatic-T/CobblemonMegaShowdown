@@ -4,11 +4,13 @@
   "variations": [
     {
       "aspects": ["mega"],
+      "poser": "cobblemon:salamence_mega",
       "model": "cobblemon:salamencemega.geo",
       "texture": "cobblemon:textures/pokemon/0373_salamence/salamence_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],
+      "poser": "cobblemon:salamence_mega",
       "model": "cobblemon:salamencemega.geo",
       "texture": "cobblemon:textures/pokemon/0373_salamence/salamence_mega_shiny.png"
     }

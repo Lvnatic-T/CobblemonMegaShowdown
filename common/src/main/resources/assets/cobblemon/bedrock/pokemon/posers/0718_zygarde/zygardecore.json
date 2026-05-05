@@ -1,42 +1,31 @@
 {
-  "head": "head",
   "portraitScale": 1.5,
-  "portraitTranslation": [
-    -0.65,
-    2.0,
-    0
-  ],
-  "profileScale": 0.45,
-  "profileTranslation": [
-    0.15,
-    1.1,
-    0
-  ],
+  "portraitTranslation": [-0.05, -0.5, 0],
+  "profileScale": 0.85,
+  "profileTranslation": [0, 0.3, 0],
+  "rootBone": "zygardecore",
+  "animations": {
+    "cry": "q.bedrock_stateful('zygardecore', 'cry')"
+  },
   "poses": {
     "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+      "poseTypes": ["STAND", "NONE"],
+      "isBattle": false,
       "animations": [
-        "look",
-        "bedrock(zygardecore, ground_idle)"
-      ]
+        "q.look('head')",
+        "q.bedrock('zygardecore', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('zygardecore', 'blink')"]
     },
     "walking": {
       "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": [
-        "look",
-        "bedrock(zygardecore, walk)"
-      ]
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": ["q.bedrock('zygardecore', 'ground_walk')"],
+      "quirks": ["q.bedrock_quirk('zygardecore', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('zygardecore', 'sleep')"]
     }
   }
 }

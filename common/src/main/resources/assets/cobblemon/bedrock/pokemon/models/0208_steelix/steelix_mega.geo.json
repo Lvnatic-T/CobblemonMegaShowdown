@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "steelix",
-					"pivot": [0, 0, 53.5]
+					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "locator_root",

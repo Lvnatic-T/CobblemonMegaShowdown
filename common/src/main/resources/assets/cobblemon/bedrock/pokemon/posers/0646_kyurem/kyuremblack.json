@@ -1595,14 +1595,6 @@
           "isVisible": false
         }
       ]
-    },
-    "sleep": {
-      "poseTypes": [
-        "SLEEP"
-      ],
-      "animations": [
-        "q.bedrock('kyuremblack', 'sleep')"
-      ]
     }
   }
 }
