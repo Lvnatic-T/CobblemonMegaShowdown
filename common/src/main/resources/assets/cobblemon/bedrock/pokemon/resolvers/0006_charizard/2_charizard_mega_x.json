@@ -11,7 +11,7 @@
           "name": "flame",
           "texture": "cobblemon:textures/pokemon/blank.png",
           "emissive": true,
-          "translucent": true
+          "translucent": false
         },
         {
           "name": "flame",
@@ -26,7 +26,7 @@
             "loop": true
           },
           "emissive": true,
-          "translucent": true
+          "translucent": false
         }
       ]
     },
@@ -39,7 +39,7 @@
           "name": "flame",
           "texture": "cobblemon:textures/pokemon/blank.png",
           "emissive": true,
-          "translucent": true
+          "translucent": false
         },
         {
           "name": "flame",
@@ -54,7 +54,7 @@
             "loop": true
           },
           "emissive": true,
-          "translucent": true
+          "translucent": false
         }
       ]
     }
