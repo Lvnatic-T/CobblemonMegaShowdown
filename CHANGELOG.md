@@ -24,3 +24,4 @@
 - New Zygarde 50% Animations
 - Retextures for Ogerpon Textures
 - Fixed Steelix Model (Pivot Point)
+- Xerneas Dex Fix
