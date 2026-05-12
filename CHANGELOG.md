@@ -2,3 +2,4 @@
 - Fixed terapagos and ogerpon tera type being changed
 - Added particles for AbilityUsage, BagItem, Item and ItemEnd usage
 - Fixed calyrex cloud issues
+- REAL Darmanitan Fix (Thats all)
