@@ -6525,12 +6525,14 @@ const Abilities = {
         pokemon.hp <= pokemon.maxhp / 2 &&
         !["Zen", "Galar-Zen"].includes(pokemon.species.forme)
       ) {
+		pokemon.formeChange('Darmanitan-Zen');
         pokemon.addVolatile("zenmode");
       } else if (
         pokemon.hp > pokemon.maxhp / 2 &&
         ["Zen", "Galar-Zen"].includes(pokemon.species.forme)
       ) {
         pokemon.addVolatile("zenmode");
+		pokemon.formeChange('Darmanitan');
         pokemon.removeVolatile("zenmode");
       }
     },
