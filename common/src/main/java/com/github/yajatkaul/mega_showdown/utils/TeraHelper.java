@@ -23,13 +23,12 @@ public class TeraHelper {
             case "grass" -> MegaShowdownItems.GRASS_TERA_SHARD;
             case "ground" -> MegaShowdownItems.GROUND_TERA_SHARD;
             case "ice" -> MegaShowdownItems.ICE_TERA_SHARD;
-            case "normal" -> MegaShowdownItems.NORMAL_TERA_SHARD;
             case "poison" -> MegaShowdownItems.POISON_TERA_SHARD;
             case "psychic" -> MegaShowdownItems.PSYCHIC_TERA_SHARD;
             case "rock" -> MegaShowdownItems.ROCK_TERA_SHARD;
             case "steel" -> MegaShowdownItems.STEEL_TERA_SHARD;
             case "water" -> MegaShowdownItems.WATER_TERA_SHARD;
-            default -> MegaShowdownItems.CUSTOM_TERA_SHARD;
+            default -> MegaShowdownItems.NORMAL_TERA_SHARD;
         };
 
         return shard.get();

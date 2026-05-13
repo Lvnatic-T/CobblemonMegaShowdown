@@ -25,7 +25,7 @@ public class TeraShard extends MSDPokemonSelectingItem {
     @Override
     public @Nullable InteractionResultHolder<ItemStack> applyToPokemon(@NotNull ServerPlayer player, @NotNull ItemStack itemStack, @NotNull Pokemon pokemon) {
         if (pokemon.getSpecies().getName().equals("Ogerpon") ||
-                !pokemon.getSpecies().getName().equals("Terapagos") ||
+                pokemon.getSpecies().getName().equals("Terapagos") ||
                 pokemon.getTeraType() == teraType) {
             return InteractionResultHolder.pass(itemStack);
         }
@@ -43,7 +43,6 @@ public class TeraShard extends MSDPokemonSelectingItem {
                 ParticlesList.glowParticles.apply(pokemon.getEntity());
             }
 
-            pokemon.setTeraType(teraType);
             pokemon.setTeraType(teraType);
             AdvancementHelper.grantAdvancement(pokemon.getOwnerPlayer(), "tera/change_tera");
         } else {

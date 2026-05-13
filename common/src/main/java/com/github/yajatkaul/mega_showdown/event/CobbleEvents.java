@@ -44,7 +44,6 @@ import com.github.yajatkaul.mega_showdown.gimmick.MegaGimmick;
 import com.github.yajatkaul.mega_showdown.gimmick.UltraGimmick;
 import com.github.yajatkaul.mega_showdown.item.MegaShowdownItems;
 import com.github.yajatkaul.mega_showdown.item.custom.form_change.FormChangeHeldItem;
-import com.github.yajatkaul.mega_showdown.item.custom.tera.CustomTeraShard;
 import com.github.yajatkaul.mega_showdown.sound.MegaShowdownSounds;
 import com.github.yajatkaul.mega_showdown.tag.MegaShowdownTags;
 import com.github.yajatkaul.mega_showdown.utils.*;
@@ -149,9 +148,7 @@ public class CobbleEvents {
 
             if (otherSuccess) {
                 ItemStack stack = new ItemStack(correspondingTeraShard);
-                if (correspondingTeraShard instanceof CustomTeraShard) {
-                    stack.set(MegaShowdownDataComponents.TERA_TYPE.get(), pokemon.getTeraType());
-                }
+
                 ItemEntity itemEntity = new ItemEntity(
                         pokemonEntity.level(),
                         pokemonEntity.getX(), pokemonEntity.getY(), pokemonEntity.getZ(),
