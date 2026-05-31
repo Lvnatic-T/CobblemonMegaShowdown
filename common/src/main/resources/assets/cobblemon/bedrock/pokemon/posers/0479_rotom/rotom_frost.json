@@ -8,16 +8,6 @@
     "cry": "q.bedrock_stateful('rotom_frost', 'cry')"
   },
   "poses": {
-    "battle-standing": {
-      "poseTypes": ["STAND"],
-      "isBattle": true,
-      "animations": ["q.bedrock('rotom_frost', 'battle_idle')"],
-      "quirks": [
-        "q.bedrock_quirk('rotom_frost', 'cry', 7, 15, 1)",
-        "q.bedrock_quirk('rotom_frost', 'blink', 2, 5, 1)",
-        "q.bedrock_quirk('rotom_frost', 'special', 10, 17, 1)"
-      ]
-    },
     "standing": {
       "poseTypes": ["STAND", "HOVER", "NONE", "PORTRAIT", "PROFILE"],
       "animations": ["q.bedrock('rotom_frost', 'ground_idle')"],
