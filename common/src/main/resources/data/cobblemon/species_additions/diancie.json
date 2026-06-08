@@ -1,0 +1,9 @@
+{
+  "implemented": true,
+  "target": "cobblemon:diancie",
+  "hitbox": {
+    "width": 1,
+    "height": 1.8,
+    "fixed": false
+  }
+}
