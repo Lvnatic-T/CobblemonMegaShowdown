@@ -29,7 +29,14 @@ subprojects {
     repositories {
         mavenCentral()
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-        maven { url 'https://maven.impactdev.net/repository/development/' }
+        maven {
+            name = "cobblemonSnapshots"
+            url = uri("https://artefacts.cobblemon.com/snapshots")
+        }
+        maven {
+            name = "cobblemon"
+            url = uri("https://artefacts.cobblemon.com/releases")
+        }
         maven { url 'https://maven.neoforged.net/releases' }
         maven { url 'https://thedarkcolour.github.io/KotlinForForge/' }
 

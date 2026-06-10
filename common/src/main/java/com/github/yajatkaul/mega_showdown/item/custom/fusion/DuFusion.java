@@ -142,13 +142,14 @@ public class DuFusion extends ToolTipItem {
                     (pokemons1.contains(pokemon.getSpecies().getName()) ||
                             pokemons2.contains(pokemon.getSpecies().getName()))
             ) {
+                pokemon.getPersistentData().putUUID("lastOwner", player.getUUID());
                 stack.set(MegaShowdownDataComponents.POKEMON_STORAGE.get(), pokemonStorge.save(registryAccess, pokemon));
                 stack.set(DataComponents.CUSTOM_NAME, Component.translatable("item.mega_showdown." + namespace + ".charged"));
 
                 playerPartyStore.remove(pokemon);
             }
         } else if (pokemonStored != null) {
-            if (!pokemonStored.getTradeable() && pokemonStored.getOwnerPlayer() != player) {
+            if (!pokemonStored.getTradeable() && !pokemonStored.getPersistentData().getUUID("lastOwner").equals(player.getUUID())) {
                 player.displayClientMessage(Component.translatable("message.mega_showdown.untradable")
                         .withStyle(ChatFormatting.RED), true);
                 return InteractionResultHolder.pass(stack);
