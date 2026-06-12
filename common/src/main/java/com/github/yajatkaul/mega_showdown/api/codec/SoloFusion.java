@@ -105,7 +105,7 @@ public record SoloFusion(
                 stack.set(DataComponents.CUSTOM_NAME, Component.translatable("item.mega_showdown." + namespace + ".inactive"));
             } else if (pokemonStored != null && isMain) {
                 if (aspect_conditions.validate_apply(pokemon)) {
-                    Effect.getEffect(effect.get()).revertEffects(pokemon, aspect_conditions.aspectApply().aspects(), aspect_conditions.aspectApply().pokemonProperties(), null);
+                    Effect.getEffect(effect.get()).applyEffects(pokemon, aspect_conditions.aspectApply().aspects(), aspect_conditions.aspectApply().pokemonProperties(), null);
                 } else {
                     return InteractionResultHolder.pass(stack);
                 }

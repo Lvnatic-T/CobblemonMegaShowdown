@@ -1,16 +1,20 @@
 {
   "minecraft": {
-    "particle_apply": "minecraft:ash",
-    "particle_revert": "minecraft:ash",
-    "sound_revert": {
-      "sound_id": "minecraft:block.amethyst_block.chime"
-    },
+    "particle_apply": "minecraft:end_rod",
     "sound_apply": {
       "sound_id": "minecraft:block.amethyst_block.chime"
     },
     "animations": {
-      "animations_revert": ["cry"],
       "animations_apply": ["cry"]
+    }
+  },
+  "snowstorm": {
+    "source_revert": ["root"],
+    "particle_revert": "cobblemon:prism_fusion_dawn",
+    "revert_after": 6,
+    "animations": {
+      "revert_delay": 6.1,
+      "animations_revert": ["cry"]
     }
   }
 }

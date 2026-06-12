@@ -108,7 +108,7 @@ public class SoloFusion extends ToolTipItem {
                 stack.remove(MegaShowdownDataComponents.POKEMON_STORAGE.get());
                 stack.set(DataComponents.CUSTOM_NAME, Component.translatable("item.mega_showdown." + namespace + ".inactive"));
             } else if (pokemonStored != null && isMain) {
-                Effect.getEffect(effectId).revertEffects(pokemon, applyAspect, Optional.empty(), null);
+                Effect.getEffect(effectId).applyEffects(pokemon, applyAspect, Optional.empty(), null);
                 pokemon.setTradeable(false);
 
                 CompoundTag otherPokemonNbt = pokemonStored.saveToNBT(level.registryAccess(), new CompoundTag());
