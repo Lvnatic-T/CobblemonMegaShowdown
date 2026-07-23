@@ -17,7 +17,7 @@ public abstract class ModeBakeryMixin {
 
     @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/resources/model/ModelBakery;loadSpecialItemModelAndDependencies(Lnet/minecraft/client/resources/model/ModelResourceLocation;)V", ordinal = 1))
     private void onInit(CallbackInfo ci) {
-        for (ItemRenderingCodec itemRender : ItemRenderingLoader.REGISTRY.values()) {
+        for (ItemRenderingCodec itemRender : ItemRenderingLoader.entries()) {
             this.loadSpecialItemModelAndDependencies(ModelResourceLocation.inventory(itemRender.itemId()));
             this.loadSpecialItemModelAndDependencies(ModelResourceLocation.inventory(itemRender.itemId_3d()));
         }
