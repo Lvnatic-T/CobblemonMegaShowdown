@@ -4,6 +4,7 @@
   "forms": [
     {
       "name": "Mega",
+      "pokedex": ["cobblemon.species.victreebel-mega.desc"],
       "labels": ["gen1", "mega"],
       "aspects": ["mega"],
       "abilities": ["innardsout", "h:innardsout"],
