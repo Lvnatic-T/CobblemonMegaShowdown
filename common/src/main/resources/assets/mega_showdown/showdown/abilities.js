@@ -6634,18 +6634,25 @@ const Abilities = {
       ) {
         return;
       }
+
+      const isGalarian = pokemon.baseSpecies.forme === "Galar";
+
       if (
         pokemon.hp <= pokemon.maxhp / 2 &&
         !["Zen", "Galar-Zen"].includes(pokemon.species.forme)
       ) {
-		pokemon.formeChange('Darmanitan-Zen');
+        pokemon.formeChange(
+          isGalarian ? "Darmanitan-Galar-Zen" : "Darmanitan-Zen"
+        );
         pokemon.addVolatile("zenmode");
       } else if (
         pokemon.hp > pokemon.maxhp / 2 &&
         ["Zen", "Galar-Zen"].includes(pokemon.species.forme)
       ) {
         pokemon.addVolatile("zenmode");
-		pokemon.formeChange('Darmanitan');
+        pokemon.formeChange(
+          isGalarian ? "Darmanitan-Galar" : "Darmanitan"
+        );
         pokemon.removeVolatile("zenmode");
       }
     },

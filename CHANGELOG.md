@@ -1,5 +1,4 @@
-# 1.9.1+1.7.3-release
-- Fix model registry reload race
-- Fixed missing models
-- Minor fixes
-- Fixed some abilities not working
+# 1.9.0+1.7.3-release-hotfix-hotfix
+- Fixed ash greninja size
+- Fixed raichunite recpie
+- Fixed Galarian Darmanitan Zen Mode
