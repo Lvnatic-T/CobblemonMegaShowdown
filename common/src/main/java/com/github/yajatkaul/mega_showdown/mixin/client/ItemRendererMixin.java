@@ -32,7 +32,7 @@ public abstract class ItemRendererMixin {
             argsOnly = true
     )
     public BakedModel modifyModel(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack, @Local(argsOnly = true) ItemDisplayContext renderMode) {
-        ItemRenderingCodec itemRenderingCodec = ItemRenderingLoader.REGISTRY.getOrDefault(BuiltInRegistries.ITEM.getKey(stack.getItem()), null);
+        ItemRenderingCodec itemRenderingCodec = ItemRenderingLoader.get(BuiltInRegistries.ITEM.getKey(stack.getItem()));
 
         if (itemRenderingCodec != null) {
             PerspectivesCodec perspectives = itemRenderingCodec.perspectivesCodec();
@@ -64,7 +64,7 @@ public abstract class ItemRendererMixin {
             ordinal = 1
     )
     public BakedModel getHeldItemModelMixin(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack) {
-        ItemRenderingCodec itemRenderingCodec = ItemRenderingLoader.REGISTRY.getOrDefault(BuiltInRegistries.ITEM.getKey(stack.getItem()), null);
+        ItemRenderingCodec itemRenderingCodec = ItemRenderingLoader.get(BuiltInRegistries.ITEM.getKey(stack.getItem()));
 
         if (itemRenderingCodec != null) {
             return this.itemModelShaper.getModelManager().getModel(ModelResourceLocation.inventory(itemRenderingCodec.itemId_3d()));

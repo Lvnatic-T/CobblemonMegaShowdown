@@ -1,30 +1,98 @@
 {
+  "head": "head",
   "portraitScale": 1.5,
-  "portraitTranslation": [-0.22, 0.94, 0],
-  "profileScale": 0.64,
-  "profileTranslation": [0.0, 0.8, 0],
-  "rootBone": "audino",
+  "portraitTranslation": [
+    0,
+    0.8,
+    0
+  ],
+  "profileScale": 0.8,
+  "profileTranslation": [
+    0,
+    0.7,
+    0
+  ],
+  "faint": "bedrock(audino, faint)",
   "poses": {
-    "battle-standing": {
-      "poseTypes": ["STAND"],
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND"
+      ],
       "isBattle": true,
-      "animations": ["q.look('head_ai')", "q.bedrock('audino', 'ground_idle')"],
-      "quirks": ["q.bedrock_quirk('audino', 'blink')"]
+      "isTouchingWater": false,
+      "animations": [
+        "bedrock(audino, battle_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "loopTimes": 5,
+          "minSecondsBetweenOccurrences": 8,
+          "maxSecondsBetweenOccurrences": 20,
+          "animations": [
+            "bedrock(audino, blink)"
+          ]
+        }
+      ]
     },
     "standing": {
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "isBattle": false,
-      "animations": ["q.look('head_ai')", "q.bedrock('audino', 'ground_idle')"],
-      "quirks": ["q.bedrock_quirk('audino', 'blink')"]
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "bedrock(audino, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": [
+            "bedrock(audino, blink)"
+          ]
+        }
+      ]
     },
     "walking": {
-      "poseTypes": ["WALK"],
-      "animations": [
-        "q.bedrock('audino', 'ground_idle')",
-        "q.biped_walk(0.56, 0.7, 'leg_left', 'leg_right')",
-        "q.bimanual_swing(0.66, 0.8, 'arm_left', 'arm_right')"
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [
+        "WALK"
       ],
-      "quirks": ["q.bedrock_quirk('audino', 'blink')"]
+      "animations": [
+        "bedrock(audino, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": [
+            "bedrock(audino, blink)"
+          ]
+        }
+      ]
+    },
+    "swimming": {
+      "poseName": "swimming",
+      "transformTicks": 10,
+      "poseTypes": [
+        "SWIM"
+      ],
+      "animations": [
+        "bedrock(audino, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": [
+            "bedrock(audino, blink)"
+          ]
+        }
+      ]
     }
   }
 }
