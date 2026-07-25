@@ -3,18 +3,23 @@ package com.github.yajatkaul.mega_showdown.config;
 import com.github.yajatkaul.mega_showdown.MegaShowdown;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Map;
 
 public class MegaShowdownConfig {
     private static final String FILE_PATH = "./config/mega_showdown/config.json";
+    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+
     public static boolean loaded = false;
 
     public static int teraShardRequired = 50;
@@ -25,7 +30,7 @@ public class MegaShowdownConfig {
 
     public static boolean mega = true;
     public static boolean zMoves = true;
-    public static boolean teralization = true;
+    public static boolean terastallization = true;
     public static boolean dynamax = true;
     public static int powerSpotRange = 20;
     public static boolean dynamaxAnywhere = false;
@@ -47,45 +52,44 @@ public class MegaShowdownConfig {
 
     public static boolean debugMode = false;
 
+    /**
+     * Fields that are excluded from (de)serialization even though they're public static.
+     */
+    private static final Map<String, Boolean> EXCLUDED = Map.of("loaded", true);
+
+    /**
+     * Java field name -> JSON key, only listed where they differ (kept for backwards
+     * compatibility with existing config.json files).
+     */
+    private static final Map<String, String> JSON_KEY_OVERRIDES = Map.of(
+            "showMoveInspector", "showMoveTooltips"
+    );
+
     private static void save() {
-        JsonObject json = getJsonObject();
+        JsonObject json = new JsonObject();
+
+        for (Field field : configFields()) {
+            String key = jsonKeyFor(field);
+            try {
+                Object value = field.get(null);
+                if (value instanceof Boolean) {
+                    json.addProperty(key, (Boolean) value);
+                } else if (value instanceof Number) {
+                    json.addProperty(key, (Number) value);
+                }
+            } catch (IllegalAccessException e) {
+                MegaShowdown.LOGGER.error("Failed to read field {}", field.getName(), e);
+            }
+        }
 
         try {
             Files.createDirectories(Path.of("./config/mega_showdown"));
             try (FileWriter writer = new FileWriter(FILE_PATH)) {
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                writer.write(gson.toJson(json));
+                writer.write(GSON.toJson(json));
             }
         } catch (IOException e) {
             MegaShowdown.LOGGER.error("Failed to save MegaShowdown config:", e);
         }
-    }
-
-    private static @NotNull JsonObject getJsonObject() {
-        JsonObject json = new JsonObject();
-        json.addProperty("teraShardRequired", teraShardRequired);
-        json.addProperty("multipleMegas", multipleMegas);
-        json.addProperty("msdPatchAutoUpdate", msdPatchAutoUpdate);
-        json.addProperty("mega", mega);
-        json.addProperty("zMoves", zMoves);
-        json.addProperty("teralization", teralization);
-        json.addProperty("dynamax", dynamax);
-        json.addProperty("powerSpotRange", powerSpotRange);
-        json.addProperty("dynamaxAnywhere", dynamaxAnywhere);
-        json.addProperty("dynamaxScaleFactor", dynamaxScaleFactor);
-        json.addProperty("teraShardDropRate", teraShardDropRate);
-        json.addProperty("stellarShardDropRate", stellarShardDropRate);
-        json.addProperty("likoPendentDuration", likoPendentDuration);
-        json.addProperty("minBondingRequired", minBondingRequired);
-        json.addProperty("outSideMega", outSideMega);
-        json.addProperty("outSideUltraBurst", outSideUltraBurst);
-        json.addProperty("teraHats", teraHats);
-        json.addProperty("legacyTeraEffect", legacyTeraEffect);
-        json.addProperty("showBattleHUD", showBattleHUD);
-        json.addProperty("showStatChanges", showStatChanges);
-        json.addProperty("showMoveTooltips", showMoveInspector);
-        json.addProperty("debugMode", debugMode);
-        return json;
     }
 
     public static void load() {
@@ -96,79 +100,61 @@ public class MegaShowdownConfig {
             return;
         }
 
-        try (FileReader reader = new FileReader(file)) {
-            Gson gson = new Gson();
-            JsonObject json = gson.fromJson(reader, JsonObject.class);
+        boolean missingField = false;
 
-            if (json.has("teraShardRequired")) {
-                teraShardRequired = json.get("teraShardRequired").getAsInt();
-            }
-            if (json.has("multipleMegas")) {
-                multipleMegas = json.get("multipleMegas").getAsBoolean();
-            }
-            if (json.has("msdPatchAutoUpdate")) {
-                msdPatchAutoUpdate = json.get("msdPatchAutoUpdate").getAsBoolean();
-            }
-            if (json.has("mega")) {
-                mega = json.get("mega").getAsBoolean();
-            }
-            if (json.has("zMoves")) {
-                zMoves = json.get("zMoves").getAsBoolean();
-            }
-            if (json.has("teralization")) {
-                teralization = json.get("teralization").getAsBoolean();
-            }
-            if (json.has("dynamax")) {
-                dynamax = json.get("dynamax").getAsBoolean();
-            }
-            if (json.has("powerSpotRange")) {
-                powerSpotRange = json.get("powerSpotRange").getAsInt();
-            }
-            if (json.has("dynamaxAnywhere")) {
-                dynamaxAnywhere = json.get("dynamaxAnywhere").getAsBoolean();
-            }
-            if (json.has("dynamaxScaleFactor")) {
-                dynamaxScaleFactor = json.get("dynamaxScaleFactor").getAsFloat();
-            }
-            if (json.has("teraShardDropRate")) {
-                teraShardDropRate = json.get("teraShardDropRate").getAsDouble();
-            }
-            if (json.has("stellarShardDropRate")) {
-                stellarShardDropRate = json.get("stellarShardDropRate").getAsDouble();
-            }
-            if (json.has("likoPendentDuration")) {
-                likoPendentDuration = json.get("likoPendentDuration").getAsInt() * 20;
-            }
-            if (json.has("minBondingRequired")) {
-                minBondingRequired = json.get("minBondingRequired").getAsInt();
-            }
-            if (json.has("outSideMega")) {
-                outSideMega = json.get("outSideMega").getAsBoolean();
-            }
-            if (json.has("outSideUltraBurst")) {
-                outSideUltraBurst = json.get("outSideUltraBurst").getAsBoolean();
-            }
-            if (json.has("teraHats")) {
-                teraHats = json.get("teraHats").getAsBoolean();
-            }
-            if (json.has("legacyTeraEffect")) {
-                legacyTeraEffect = json.get("legacyTeraEffect").getAsBoolean();
-            }
-            if (json.has("showBattleHUD")) {
-                showBattleHUD = json.get("showBattleHUD").getAsBoolean();
-            }
-            if (json.has("showStatChanges")) {
-                showStatChanges = json.get("showStatChanges").getAsBoolean();
-            }
-            if (json.has("showMoveTooltips")) {
-                showMoveInspector = json.get("showMoveTooltips").getAsBoolean();
-            }
-            if (json.has("debugMode")) {
-                debugMode = json.get("debugMode").getAsBoolean();
+        try (FileReader reader = new FileReader(file)) {
+            JsonObject json = GSON.fromJson(reader, JsonObject.class);
+
+            for (Field field : configFields()) {
+                String key = jsonKeyFor(field);
+                if (!json.has(key)) {
+                    // Field doesn't exist in the file yet (e.g. added in a newer version).
+                    // The field keeps its default value; we'll persist it below.
+                    missingField = true;
+                    continue;
+                }
+
+                JsonElement el = json.get(key);
+                try {
+                    // Special case
+                    if (field.getName().equals("likoPendentDuration")) {
+                        field.setInt(null, el.getAsInt() * 20);
+                        continue;
+                    }
+
+                    Class<?> type = field.getType();
+                    if (type == int.class) {
+                        field.setInt(null, el.getAsInt());
+                    } else if (type == boolean.class) {
+                        field.setBoolean(null, el.getAsBoolean());
+                    } else if (type == float.class) {
+                        field.setFloat(null, el.getAsFloat());
+                    } else if (type == double.class) {
+                        field.setDouble(null, el.getAsDouble());
+                    }
+                } catch (IllegalAccessException e) {
+                    MegaShowdown.LOGGER.error("Failed to set field " + field.getName(), e);
+                }
             }
         } catch (Exception e) {
             MegaShowdown.LOGGER.error("Failed to load MegaShowdown config:", e);
         }
         loaded = true;
+
+        if (missingField) {
+            MegaShowdown.LOGGER.info("MegaShowdown config is missing one or more fields, updating file with defaults.");
+            save();
+        }
+    }
+
+    private static Field[] configFields() {
+        return java.util.Arrays.stream(MegaShowdownConfig.class.getDeclaredFields())
+                .filter(f -> Modifier.isStatic(f.getModifiers()) && Modifier.isPublic(f.getModifiers()))
+                .filter(f -> !EXCLUDED.containsKey(f.getName()))
+                .toArray(Field[]::new);
+    }
+
+    private static String jsonKeyFor(Field field) {
+        return JSON_KEY_OVERRIDES.getOrDefault(field.getName(), field.getName());
     }
 }

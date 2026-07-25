@@ -36,7 +36,6 @@ import com.github.yajatkaul.mega_showdown.api.codec.ZCrystal;
 import com.github.yajatkaul.mega_showdown.api.event.DynamaxEndCallback;
 import com.github.yajatkaul.mega_showdown.api.event.DynamaxStartCallback;
 import com.github.yajatkaul.mega_showdown.api.event.UltraBurstCallback;
-import com.github.yajatkaul.mega_showdown.components.MegaShowdownDataComponents;
 import com.github.yajatkaul.mega_showdown.config.MegaShowdownConfig;
 import com.github.yajatkaul.mega_showdown.datapack.MegaShowdownDatapackRegister;
 import com.github.yajatkaul.mega_showdown.gimmick.MaxGimmick;
@@ -130,7 +129,7 @@ public class CobbleEvents {
     }
 
     private static void dropShardPokemon(LootDroppedEvent event) {
-        if (!MegaShowdownConfig.teralization) {
+        if (!MegaShowdownConfig.terastallization) {
             return;
         }
 

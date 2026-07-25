@@ -57,7 +57,7 @@ public class GimmickTurnCheck {
                 return AccessoriesUtils.checkTagInAccessories(user, MegaShowdownTags.Items.DYNAMAX_BAND);
             }
             case TERASTALLIZATION -> {
-                if (!MegaShowdownConfig.teralization) return false;
+                if (!MegaShowdownConfig.terastallization) return false;
                 if (hasOmniRing) return true;
 
                 ItemStack teraOrb = AccessoriesUtils.findFirstItemWithTag(user, MegaShowdownTags.Items.TERA_ORB);
