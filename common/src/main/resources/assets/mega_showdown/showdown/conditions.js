@@ -464,45 +464,43 @@ const Conditions = {
   },
   // weather is implemented here since it's so important to the game
   raindance: {
-    name: "RainDance",
-    effectType: "Weather",
-    duration: 5,
-    durationCallback(source, effect) {
-      if (source?.hasItem("damprock")) {
-        return 8;
-      }
-      return 5;
-    },
-    onWeatherModifyDamage(damage, attacker, defender, move) {
-      if (defender.hasItem("utilityumbrella"))
-        return;
-      if (move.type === "Water") {
-        this.debug("rain water boost");
-        return this.chainModify(1.5);
-      }
-      if (move.type === "Fire") {
-        this.debug("rain fire suppress");
-        return this.chainModify(0.5);
-      }
-    },
-    onFieldStart(field, source, effect) {
-      if (effect?.effectType === "Ability") {
-        if (this.gen <= 5)
-          this.effectState.duration = 0;
-        this.add("-weather", "RainDance", "[from] ability: " + effect.name, "[of] " + source);
-      } else {
-        this.add("-weather", "RainDance");
-      }
-    },
-    onFieldResidualOrder: 1,
-    onFieldResidual() {
-      this.add("-weather", "RainDance", "[upkeep]");
-      this.eachEvent("Weather");
-    },
-    onFieldEnd() {
-      this.add("-weather", "none");
-    }
-  },
+		name: "RainDance",
+		effectType: "Weather",
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.hasItem("damprock")) {
+				return 8;
+			}
+			return 5;
+		},
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (defender.effectiveWeather() !== "raindance") return;
+			if (move.type === "Water") {
+				this.debug("rain water boost");
+				return this.chainModify(1.5);
+			}
+			if (move.type === "Fire") {
+				this.debug("rain fire suppress");
+				return this.chainModify(0.5);
+			}
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === "Ability") {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add("-weather", "RainDance", "[from] ability: " + effect.name, `[of] ${source}`);
+			} else {
+				this.add("-weather", "RainDance");
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add("-weather", "RainDance", "[upkeep]");
+			this.eachEvent("Weather");
+		},
+		onFieldEnd() {
+			this.add("-weather", "none");
+		}
+	},
   primordialsea: {
     name: "PrimordialSea",
     effectType: "Weather",
