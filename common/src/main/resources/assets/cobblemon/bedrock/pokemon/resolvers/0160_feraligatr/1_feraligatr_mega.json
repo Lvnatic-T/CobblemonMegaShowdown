@@ -6,13 +6,11 @@
       "aspects": ["mega"],
       "poser": "cobblemon:feraligatr_mega",
       "model": "cobblemon:feraligatr_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0160_feraligatr/feraligatr_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0160_feraligatr/feraligatr_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],
-      "texture": "cobblemon:textures/pokemon/0160_feraligatr/feraligatr_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0160_feraligatr/feraligatr_mega.png"
     }
   ]
 }

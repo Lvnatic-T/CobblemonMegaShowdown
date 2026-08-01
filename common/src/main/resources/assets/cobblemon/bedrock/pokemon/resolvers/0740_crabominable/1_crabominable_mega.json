@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:crabominable",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:crabominable_mega",
+      "model": "cobblemon:crabominable_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0740_crabominable/crabominable_mega.png"
+    },
+    {
+      "aspects": ["mega", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0740_crabominable/crabominable_mega_shiny.png"
+    }
+  ]
+}

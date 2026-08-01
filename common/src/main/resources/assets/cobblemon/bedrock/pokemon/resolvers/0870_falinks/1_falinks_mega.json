@@ -6,8 +6,7 @@
       "aspects": ["mega"],
       "poser": "cobblemon:falinks_mega",
       "model": "cobblemon:falinks_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0870_falinks/falinks_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0870_falinks/falinks_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],

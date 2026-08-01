@@ -6,8 +6,7 @@
       "aspects": ["dusk-form"],
       "poser": "cobblemon:lycanroc_dusk",
       "model": "cobblemon:lycanroc_dusk.geo",
-      "texture": "cobblemon:textures/pokemon/0745_lycanroc/lycanroc_dusk.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0745_lycanroc/lycanroc_dusk.png"
     },
     {
       "aspects": ["shiny", "dusk-form"],

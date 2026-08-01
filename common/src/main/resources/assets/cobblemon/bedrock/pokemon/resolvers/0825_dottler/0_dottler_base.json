@@ -16,17 +16,8 @@
       ]
     },
     {
-      "aspects": [
-        "shiny"
-      ],
-      "texture": "cobblemon:textures/pokemon/0825_dottler/dottler_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/0825_dottler/dottler_emissive.png",
-          "emissive": true
-        }
-      ]
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0825_dottler/dottler_shiny.png"
     }
   ]
 }

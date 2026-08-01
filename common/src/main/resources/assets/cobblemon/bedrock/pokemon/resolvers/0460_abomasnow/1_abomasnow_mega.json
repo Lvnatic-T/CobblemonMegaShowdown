@@ -6,15 +6,11 @@
       "aspects": ["mega"],
       "poser": "cobblemon:abomasnow_mega",
       "model": "cobblemon:abomasnow_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0460_abomasnow/megaabomasnow.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0460_abomasnow/megaabomasnow.png"
     },
     {
       "aspects": ["mega", "shiny"],
-      "poser": "cobblemon:abomasnow_mega",
-      "model": "cobblemon:abomasnow_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0460_abomasnow/megaabomasnow_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0460_abomasnow/megaabomasnow_shiny.png"
     }
   ]
 }

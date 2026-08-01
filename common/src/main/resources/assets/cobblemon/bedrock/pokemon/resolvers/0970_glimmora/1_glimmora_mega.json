@@ -6,8 +6,7 @@
       "aspects": ["mega"],
       "poser": "cobblemon:glimmora_mega",
       "model": "cobblemon:glimmora_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0970_glimmora/glimmora_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0970_glimmora/glimmora_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],

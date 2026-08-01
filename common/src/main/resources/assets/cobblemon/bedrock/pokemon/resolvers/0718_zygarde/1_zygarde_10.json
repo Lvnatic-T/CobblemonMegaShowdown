@@ -17,8 +17,7 @@
     },
     {
       "aspects": ["10-percent", "shiny"],
-      "texture": "cobblemon:textures/pokemon/0718_zygarde/10/zygarde10_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0718_zygarde/10/zygarde10_shiny.png"
     }
   ]
 }

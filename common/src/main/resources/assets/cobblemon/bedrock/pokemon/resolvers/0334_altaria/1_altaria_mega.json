@@ -6,13 +6,11 @@
       "aspects": ["mega"],
       "poser": "cobblemon:mega_altaria",
       "model": "cobblemon:altaria_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0334_altaria/altaria_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0334_altaria/altaria_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],
-      "texture": "cobblemon:textures/pokemon/0334_altaria/altaria_mega_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0334_altaria/altaria_mega_shiny.png"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "species": "cobblemon:meowstic",
+  "order": 3,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:meowstic_mega",
+      "model": "cobblemon:meowstic_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0678_meowstic/meowstic_mega.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/0678_meowstic/meowstic_mega_emissive.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": ["mega", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0678_meowstic/meowstic_mega_shiny.png"
+    }
+  ]
+}

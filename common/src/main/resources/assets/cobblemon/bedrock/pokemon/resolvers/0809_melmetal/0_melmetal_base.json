@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:melmetal",
       "model": "cobblemon:melmetal.geo",
-      "texture": "cobblemon:textures/pokemon/0809_melmetal/melmetal.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0809_melmetal/melmetal.png"
     },
     {
       "aspects": ["shiny"],

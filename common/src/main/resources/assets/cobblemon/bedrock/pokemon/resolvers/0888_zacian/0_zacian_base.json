@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:zacian",
       "model": "cobblemon:zacian.geo",
-      "texture": "cobblemon:textures/pokemon/0888_zacian/zacian.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0888_zacian/zacian.png"
     },
     {
       "aspects": ["shiny"],

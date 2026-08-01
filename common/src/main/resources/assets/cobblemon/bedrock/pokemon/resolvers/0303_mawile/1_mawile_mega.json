@@ -11,8 +11,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "model": "cobblemon:mawile_mega.geo",
-      "poser": "cobblemon:mawile_mega",
       "texture": "cobblemon:textures/pokemon/0303_mawile/mawile_mega_shiny.png"
     }
   ]

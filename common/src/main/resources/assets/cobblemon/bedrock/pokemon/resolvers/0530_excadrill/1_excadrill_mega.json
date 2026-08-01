@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:excadrill",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:excadrill_mega",
+      "model": "cobblemon:excadrill_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0530_excadrill/excadrill_mega.png"
+    },
+    {
+      "aspects": ["mega", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0530_excadrill/excadrill_mega_shiny.png"
+    }
+  ]
+}

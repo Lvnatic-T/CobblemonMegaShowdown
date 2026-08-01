@@ -17,7 +17,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "model": "cobblemon:sceptile_mega.geo",
       "texture": "cobblemon:textures/pokemon/0254_sceptile/sceptile_mega_shiny.png",
       "layers": [
         {

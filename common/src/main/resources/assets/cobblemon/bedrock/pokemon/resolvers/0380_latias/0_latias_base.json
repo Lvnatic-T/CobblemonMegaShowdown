@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:latias",
       "model": "cobblemon:latias2.geo",
-      "texture": "cobblemon:textures/pokemon/0380_latias/latias.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0380_latias/latias.png"
     },
     {
       "aspects": ["shiny"],

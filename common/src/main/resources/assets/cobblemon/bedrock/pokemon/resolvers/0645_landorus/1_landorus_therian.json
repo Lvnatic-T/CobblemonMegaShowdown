@@ -10,8 +10,6 @@
     },
     {
       "aspects": ["therian-forme", "shiny"],
-      "poser": "cobblemon:landorus_therian",
-      "model": "cobblemon:landorus_therian.geo",
       "texture": "cobblemon:textures/pokemon/0645_landorus/landorus_therian_shiny.png"
     }
   ]

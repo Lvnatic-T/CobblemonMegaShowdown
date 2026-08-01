@@ -16,7 +16,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "model": "cobblemon:sharpedomega.geo",
       "texture": "cobblemon:textures/pokemon/0319_sharpedo/sharpedomega_shiny.png"
     }
   ]

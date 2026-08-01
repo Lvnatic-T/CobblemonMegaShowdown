@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:chimecho",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:chimecho_mega",
+      "model": "cobblemon:chimecho_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0358_chimecho/chimecho_mega.png"
+    },
+    {
+      "aspects": ["mega", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0358_chimecho/chimecho_mega_shiny.png"
+    }
+  ]
+}

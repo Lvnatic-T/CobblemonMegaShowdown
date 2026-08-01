@@ -6,13 +6,11 @@
       "aspects": [],
       "poser": "cobblemon:abomasnow",
       "model": "cobblemon:abomasnow.geo",
-      "texture": "cobblemon:textures/pokemon/0460_abomasnow/abomasnow.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0460_abomasnow/abomasnow.png"
     },
     {
       "aspects": ["shiny"],
-      "texture": "cobblemon:textures/pokemon/0460_abomasnow/abomasnow_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0460_abomasnow/abomasnow_shiny.png"
     }
   ]
 }

@@ -11,8 +11,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "poser": "cobblemon:kangaskhan_mega",
-      "model": "cobblemon:kangaskhan_mega.geo",
       "texture": "cobblemon:textures/pokemon/0115_kangaskhan/megakangaskhan_shiny.png"
     }
   ]

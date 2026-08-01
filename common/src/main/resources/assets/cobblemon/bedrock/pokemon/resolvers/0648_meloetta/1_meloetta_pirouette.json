@@ -6,8 +6,7 @@
       "aspects": ["pirouette-forme"],
       "poser": "cobblemon:meloetta_pirouette",
       "model": "cobblemon:meloetta_pirouette.geo",
-      "texture": "cobblemon:textures/pokemon/0648_meloetta/meloetta_pirouette.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0648_meloetta/meloetta_pirouette.png"
     },
     {
       "aspects": ["shiny", "pirouette-forme"],

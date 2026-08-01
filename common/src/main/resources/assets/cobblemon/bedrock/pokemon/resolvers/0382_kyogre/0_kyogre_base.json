@@ -18,15 +18,7 @@
     },
     {
       "aspects": ["shiny"],
-      "texture": "cobblemon:textures/pokemon/0382_kyogre/kyogre_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0382_kyogre/kyogre_emissive.png",
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0382_kyogre/kyogre_shiny.png"
     }
   ]
 }

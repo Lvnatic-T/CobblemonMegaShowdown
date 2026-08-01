@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:cherrim_overcast",
       "model": "cobblemon:cherrim_overcast.geo",
-      "texture": "cobblemon:textures/pokemon/0421_cherrim/cherrim_overcast.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0421_cherrim/cherrim_overcast.png"
     },
     {
       "aspects": ["shiny"],

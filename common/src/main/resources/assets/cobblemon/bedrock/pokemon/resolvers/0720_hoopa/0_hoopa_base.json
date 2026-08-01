@@ -5,8 +5,7 @@
     {
       "poser": "cobblemon:hoopa",
       "model": "cobblemon:hoopa.geo",
-      "texture": "cobblemon:textures/pokemon/0720_hoopa/hoopa.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0720_hoopa/hoopa.png"
     },
     {
       "aspects": ["shiny"],

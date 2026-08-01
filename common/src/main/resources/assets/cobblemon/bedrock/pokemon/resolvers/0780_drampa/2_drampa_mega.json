@@ -6,11 +6,10 @@
       "aspects": ["mega"],
 	  "poser": "cobblemon:drampamega",
       "model": "cobblemon:drampamega.geo",
-      "texture": "cobblemon:textures/pokemon/0780_drampa/drampa_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0780_drampa/drampa_mega.png"
     },
     {
-      "aspects": [ "mega", "shiny" ],
+      "aspects": ["mega", "shiny"],
       "texture": "cobblemon:textures/pokemon/0780_drampa/drampa_mega_shiny.png"
     }
   ]

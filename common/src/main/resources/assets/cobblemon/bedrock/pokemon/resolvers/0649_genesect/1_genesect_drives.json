@@ -1,0 +1,40 @@
+{
+  "species": "cobblemon:genesect",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["water-drive"],
+      "poser": "cobblemon:genesect",
+      "model": "cobblemon:genesect.geo",
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_douse.png"
+    },
+    {
+      "aspects": ["shiny", "water-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_douse_shiny.png"
+    },
+    {
+      "aspects": ["fire-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_burn.png"
+    },
+    {
+      "aspects": ["shiny", "fire-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_burn_shiny.png"
+    },
+    {
+      "aspects": ["ice-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_chill.png"
+    },
+    {
+      "aspects": ["shiny", "ice-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_chill_shiny.png"
+    },
+    {
+      "aspects": ["electric-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_shock.png"
+    },
+    {
+      "aspects": ["shiny", "electric-drive"],
+      "texture": "cobblemon:textures/pokemon/0649_genesect/genesect_shock_shiny.png"
+    }
+  ]
+}

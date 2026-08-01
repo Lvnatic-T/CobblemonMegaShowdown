@@ -6,13 +6,11 @@
       "aspects": ["gmax"],
       "poser": "cobblemon:gmaxduraludon",
       "model": "cobblemon:gmax_duraludon.geo",
-      "texture": "cobblemon:textures/pokemon/0884_duraludon/gmax_duraludon.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0884_duraludon/gmax_duraludon.png"
     },
     {
       "aspects": ["gmax", "shiny"],
-      "texture": "cobblemon:textures/pokemon/0884_duraludon/gmax_duraludon_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0884_duraludon/gmax_duraludon_shiny.png"
     }
   ]
 }

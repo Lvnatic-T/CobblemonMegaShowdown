@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:groudon",
       "model": "cobblemon:groudon.geo",
-      "texture": "cobblemon:textures/pokemon/0383_groudon/groudon.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0383_groudon/groudon.png"
     },
     {
       "aspects": ["shiny"],

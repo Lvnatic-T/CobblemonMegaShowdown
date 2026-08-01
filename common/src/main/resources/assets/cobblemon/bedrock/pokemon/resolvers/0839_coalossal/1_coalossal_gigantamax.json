@@ -6,15 +6,11 @@
       "aspects": ["gmax"],
       "poser": "cobblemon:coalossalgmax",
       "model": "cobblemon:gmax_coalossal.geo",
-      "texture": "cobblemon:textures/pokemon/0839_coalossal/gmax_coalossal.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0839_coalossal/gmax_coalossal.png"
     },
     {
       "aspects": ["gmax", "shiny"],
-      "poser": "cobblemon:coalossalgmax",
-      "model": "cobblemon:gmax_coalossal.geo",
-      "texture": "cobblemon:textures/pokemon/0839_coalossal/gmax_coalossal_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0839_coalossal/gmax_coalossal_shiny.png"
     }
   ]
 }

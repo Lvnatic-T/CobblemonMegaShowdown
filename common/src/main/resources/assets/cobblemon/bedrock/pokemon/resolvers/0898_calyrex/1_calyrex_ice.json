@@ -6,8 +6,7 @@
       "aspects": ["ice-rider"],
       "poser": "cobblemon:calyrex_ice_rider",
       "model": "cobblemon:calyrex_ice_rider.geo",
-      "texture": "cobblemon:textures/pokemon/0898_calyrex/calyrex_ice_rider.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0898_calyrex/calyrex_ice_rider.png"
     },
     {
       "aspects": ["ice-rider", "shiny"],

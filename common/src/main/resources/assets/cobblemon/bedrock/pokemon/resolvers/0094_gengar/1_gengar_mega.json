@@ -18,16 +18,7 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "model": "cobblemon:gengar_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0094_gengar/gengar_shiny_mega.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "texture": "cobblemon:textures/pokemon/blank.png",
-          "emissive": false,
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0094_gengar/gengar_shiny_mega.png"
     }
   ]
 }

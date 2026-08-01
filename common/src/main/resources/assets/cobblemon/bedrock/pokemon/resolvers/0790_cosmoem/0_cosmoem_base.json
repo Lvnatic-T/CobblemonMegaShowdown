@@ -18,15 +18,7 @@
     },
     {
       "aspects": ["shiny"],
-      "texture": "cobblemon:textures/pokemon/0790_cosmoem/cosmoem_shiny.png",
-      "layers": [
-        {
-          "name": "glow",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0790_cosmoem/cosmoem_emissive.png",
-          "translucent": false
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0790_cosmoem/cosmoem_shiny.png"
     }
   ]
 }

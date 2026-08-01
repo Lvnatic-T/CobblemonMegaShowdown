@@ -1,0 +1,17 @@
+{
+  "species": "cobblemon:mesprit",
+  "order": 0,
+
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:mesprit",
+      "model": "cobblemon:mesprit.geo",
+      "texture": "cobblemon:textures/pokemon/0481_mesprit/mesprit.png"
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0481_mesprit/mesprit_shiny.png"
+    }
+  ]
+}

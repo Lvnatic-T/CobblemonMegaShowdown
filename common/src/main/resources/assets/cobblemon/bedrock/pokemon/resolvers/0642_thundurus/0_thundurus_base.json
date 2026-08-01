@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:thundurus",
       "model": "cobblemon:thundurus.geo",
-      "texture": "cobblemon:textures/pokemon/0642_thundurus/thundurus.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0642_thundurus/thundurus.png"
     },
     {
       "aspects": ["shiny"],

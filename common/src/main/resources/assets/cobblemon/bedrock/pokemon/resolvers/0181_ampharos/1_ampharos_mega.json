@@ -17,7 +17,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "model": "cobblemon:ampharos_mega.geo",
       "texture": "cobblemon:textures/pokemon/0181_ampharos/ampharos_shiny_mega.png",
       "layers": [
         {

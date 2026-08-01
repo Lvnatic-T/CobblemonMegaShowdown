@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:calyrex",
       "model": "cobblemon:calyrex.geo",
-      "texture": "cobblemon:textures/pokemon/0898_calyrex/calyrex.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0898_calyrex/calyrex.png"
     },
     {
       "aspects": ["shiny"],

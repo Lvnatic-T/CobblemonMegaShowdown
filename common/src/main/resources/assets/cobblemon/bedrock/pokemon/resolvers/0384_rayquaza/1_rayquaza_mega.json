@@ -18,8 +18,6 @@
     },
     {
       "aspects": ["shiny", "mega"],
-      "poser": "cobblemon:megarayquaza",
-      "model": "cobblemon:megarayquaza.geo",
       "texture": "cobblemon:textures/pokemon/0384_rayquaza/megarayquaza_shiny.png",
       "layers": [
         {

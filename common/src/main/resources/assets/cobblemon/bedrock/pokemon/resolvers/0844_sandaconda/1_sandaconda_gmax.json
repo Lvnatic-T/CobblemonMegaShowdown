@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:sandaconda",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["gmax"],
+      "poser": "cobblemon:sandacondagmax",
+      "model": "cobblemon:sandaconda_gigantamax.geo",
+      "texture": "cobblemon:textures/pokemon/0844_sandaconda/sandaconda_gigantamax.png"
+    },
+    {
+      "aspects": ["gmax", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0844_sandaconda/sandaconda_gigantamax_shiny.png"
+    }
+  ]
+}

@@ -18,20 +18,10 @@
     },
     {
       "aspects": ["shiny", "attack-forme"],
-      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_emissive.png",
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_shiny.png"
     },
     {
       "aspects": ["attack-forme", "green-color"],
-      "poser": "cobblemon:deoxys_attack",
-      "model": "cobblemon:deoxys_attack.geo",
       "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_green_core.png",
       "layers": [
         {
@@ -44,15 +34,7 @@
     },
     {
       "aspects": ["shiny", "attack-forme", "green-color"],
-      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_green_core_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_green_core_emissive.png",
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_attack_green_core_shiny.png"
     }
   ]
 }

@@ -6,13 +6,10 @@
       "aspects": ["mega"],
       "poser": "cobblemon:gallade_mega",
       "model": "cobblemon:gallade_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0475_gallade/gallade_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0475_gallade/gallade_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],
-      "poser": "cobblemon:gallade_mega",
-      "model": "cobblemon:gallade_mega.geo",
       "texture": "cobblemon:textures/pokemon/0475_gallade/gallade_mega_shiny.png"
     }
   ]

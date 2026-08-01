@@ -6,8 +6,7 @@
       "aspects": ["crowned"],
       "poser": "cobblemon:zamazenta_crown",
       "model": "cobblemon:zamazenta_crown.geo",
-      "texture": "cobblemon:textures/pokemon/0889_zamazenta/zamazenta_crown.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0889_zamazenta/zamazenta_crown.png"
     },
     {
       "aspects": ["shiny", "crowned"],

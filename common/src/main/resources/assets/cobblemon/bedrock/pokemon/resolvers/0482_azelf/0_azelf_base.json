@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:azelf",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:azelf",
+      "model": "cobblemon:azelf.geo",
+      "texture": "cobblemon:textures/pokemon/0482_azelf/azelf.png"
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0482_azelf/azelf_shiny.png"
+    }
+  ]
+}

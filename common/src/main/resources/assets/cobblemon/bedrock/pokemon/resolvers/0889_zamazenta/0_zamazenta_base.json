@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:zamazenta",
       "model": "cobblemon:zamazenta.geo",
-      "texture": "cobblemon:textures/pokemon/0889_zamazenta/zamazenta.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0889_zamazenta/zamazenta.png"
     },
     {
       "aspects": ["shiny"],

@@ -33,8 +33,6 @@
     },
     {
       "aspects": ["mega_y", "shiny"],
-      "poser": "cobblemon:charizard_mega_y",
-      "model": "cobblemon:charizard_mega_y.geo",
       "texture": "cobblemon:textures/pokemon/0006_charizard/charizard_mega_y_shiny.png",
       "layers": [
         {

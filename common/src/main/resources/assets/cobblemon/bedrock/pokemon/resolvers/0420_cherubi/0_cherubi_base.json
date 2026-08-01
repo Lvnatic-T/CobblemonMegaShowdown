@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:cherubi",
       "model": "cobblemon:cherubi.geo",
-      "texture": "cobblemon:textures/pokemon/0420_cherubi/cherubi.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0420_cherubi/cherubi.png"
     },
     {
       "aspects": ["shiny"],

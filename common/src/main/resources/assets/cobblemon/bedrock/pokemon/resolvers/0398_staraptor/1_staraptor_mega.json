@@ -6,8 +6,7 @@
       "aspects": ["mega"],
       "poser": "cobblemon:staraptor_mega",
       "model": "cobblemon:staraptor_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0398_staraptor/staraptor_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0398_staraptor/staraptor_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],

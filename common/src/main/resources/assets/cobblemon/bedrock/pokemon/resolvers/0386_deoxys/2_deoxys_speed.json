@@ -18,20 +18,10 @@
     },
     {
       "aspects": ["shiny", "speed-forme"],
-      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_emissive.png",
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_shiny.png"
     },
     {
       "aspects": ["speed-forme", "green-color"],
-      "poser": "cobblemon:deoxys_speed",
-      "model": "cobblemon:deoxys_speed.geo",
       "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_green_core.png",
       "layers": [
         {
@@ -44,15 +34,7 @@
     },
     {
       "aspects": ["shiny", "speed-forme", "green-color"],
-      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_green_core_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_emissive.png",
-          "translucent": true
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/0386_deoxys/deoxys_speed_green_core_shiny.png"
     }
   ]
 }

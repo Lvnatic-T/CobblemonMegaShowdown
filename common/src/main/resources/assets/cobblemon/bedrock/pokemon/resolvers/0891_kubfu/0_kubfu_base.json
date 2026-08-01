@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:kubfu",
       "model": "cobblemon:kubfu.geo",
-      "texture": "cobblemon:textures/pokemon/0891_kubfu/kubfu.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0891_kubfu/kubfu.png"
     },
     {
       "aspects": ["shiny"],

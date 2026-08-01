@@ -6,8 +6,7 @@
       "aspects": ["active-mode"],
       "poser": "cobblemon:xerneas",
       "model": "cobblemon:xerneas.geo",
-      "texture": "cobblemon:textures/pokemon/0716_xerneas/xerneas.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0716_xerneas/xerneas.png"
     },
     {
       "aspects": ["shiny", "active-mode"],

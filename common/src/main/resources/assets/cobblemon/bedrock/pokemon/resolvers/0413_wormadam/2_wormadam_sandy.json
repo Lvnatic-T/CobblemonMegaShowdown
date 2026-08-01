@@ -6,8 +6,7 @@
       "aspects": ["sandy-cloak"],
       "poser": "cobblemon:wormadam",
       "model": "cobblemon:wormadam_sandy.geo",
-      "texture": "cobblemon:textures/pokemon/0413_wormadam/wormadam_sandy.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0413_wormadam/wormadam_sandy.png"
     },
     {
       "aspects": ["shiny", "sandy-cloak"],

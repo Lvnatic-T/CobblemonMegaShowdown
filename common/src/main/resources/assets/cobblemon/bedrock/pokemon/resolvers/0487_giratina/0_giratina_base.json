@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:giratina",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:giratina",
+      "model": "cobblemon:giratina.geo",
+      "texture": "cobblemon:textures/pokemon/0487_giratina/giratina.png"
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0487_giratina/giratina_shiny.png"
+    }
+  ]
+}

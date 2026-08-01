@@ -6,8 +6,7 @@
       "aspects": ["resolute-form"],
       "poser": "cobblemon:keldeo_resolut",
       "model": "cobblemon:keldeo_resolut.geo",
-      "texture": "cobblemon:textures/pokemon/0647_keldeo/keldeo_resolut.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0647_keldeo/keldeo_resolut.png"
     },
     {
       "aspects": ["shiny", "resolute-form"],

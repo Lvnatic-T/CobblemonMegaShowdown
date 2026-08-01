@@ -19,12 +19,7 @@
       ]
     },
     {
-      "aspects": [
-        "mega",
-        "shiny"
-      ],
-      "poser": "cobblemon:beedrill_mega",
-      "model": "cobblemon:beedrillmega.geo",
+      "aspects": ["mega", "shiny"],
       "texture": "cobblemon:textures/pokemon/0015_beedrill/beedrillmega_shiny.png",
       "layers": [
         {

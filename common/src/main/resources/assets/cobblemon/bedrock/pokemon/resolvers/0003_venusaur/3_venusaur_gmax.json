@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:venusaur",
+  "order": 3,
+  "variations": [
+    {
+      "aspects": ["gmax"],
+      "poser": "cobblemon:venusaur_gigantamax",
+      "model": "cobblemon:venusaur_gmax.geo",
+      "texture": "cobblemon:textures/pokemon/0003_venusaur/venusaur_gmax.png"
+    },
+    {
+      "aspects": ["gmax", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0003_venusaur/venusaur_gmax_shiny.png"
+    }
+  ]
+}

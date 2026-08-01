@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:froslass",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:froslass_mega",
+      "model": "cobblemon:froslass_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0478_froslass/froslass_mega.png"
+    },
+    {
+      "aspects": ["mega", "shiny"],
+      "texture": "cobblemon:textures/pokemon/0478_froslass/froslass_mega_shiny.png"
+    }
+  ]
+}

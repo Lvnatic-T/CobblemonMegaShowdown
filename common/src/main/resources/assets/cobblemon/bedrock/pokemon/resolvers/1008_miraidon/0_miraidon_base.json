@@ -1,12 +1,6 @@
 {
   "species": "cobblemon:miraidon",
   "order": 0,
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.5,
-    "height": 2,
-    "fixed": false
-  },
   "variations": [
     {
       "aspects": [],
@@ -24,15 +18,7 @@
     },
     {
       "aspects": ["shiny"],
-      "texture": "cobblemon:textures/pokemon/1008_miraidon/miraidon_shiny.png",
-      "layers": [
-        {
-          "name": "emissive",
-          "emissive": true,
-          "texture": "cobblemon:textures/pokemon/1008_miraidon/miraidon_emissive.png",
-          "translucent": false
-        }
-      ]
+      "texture": "cobblemon:textures/pokemon/1008_miraidon/miraidon_shiny.png"
     }
   ]
 }

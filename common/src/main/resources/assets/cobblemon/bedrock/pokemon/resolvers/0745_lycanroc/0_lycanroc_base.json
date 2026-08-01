@@ -6,8 +6,7 @@
       "aspects": [],
       "poser": "cobblemon:lycanroc",
       "model": "cobblemon:lycanroc.geo",
-      "texture": "cobblemon:textures/pokemon/0745_lycanroc/lycanroc.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0745_lycanroc/lycanroc.png"
     },
     {
       "aspects": ["shiny"],

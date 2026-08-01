@@ -6,8 +6,7 @@
       "aspects": ["crowned"],
       "poser": "cobblemon:zacian_crown",
       "model": "cobblemon:zacian_crown.geo",
-      "texture": "cobblemon:textures/pokemon/0888_zacian/zacian_crown.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0888_zacian/zacian_crown.png"
     },
     {
       "aspects": ["shiny", "crowned"],

@@ -6,13 +6,10 @@
       "aspects": [],
       "poser": "cobblemon:duraludon",
       "model": "cobblemon:duraludon.geo",
-      "texture": "cobblemon:textures/pokemon/0884_duraludon/duraludon.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0884_duraludon/duraludon.png"
     },
     {
-      "aspects": [
-        "shiny"
-      ],
+      "aspects": ["shiny"],
       "texture": "cobblemon:textures/pokemon/0884_duraludon/duraludon_shiny.png"
     }
   ]

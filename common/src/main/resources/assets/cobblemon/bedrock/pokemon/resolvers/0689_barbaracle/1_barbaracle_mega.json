@@ -6,8 +6,7 @@
       "aspects": ["mega"],
       "poser": "cobblemon:barbaracle_mega",
       "model": "cobblemon:barbaracle_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0689_barbaracle/barbaracle_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0689_barbaracle/barbaracle_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],

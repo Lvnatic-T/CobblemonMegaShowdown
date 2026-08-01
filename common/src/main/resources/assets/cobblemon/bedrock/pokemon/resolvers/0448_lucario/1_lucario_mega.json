@@ -5,14 +5,12 @@
     {
       "aspects": ["mega"],
       "model": "cobblemon:lucario_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0448_lucario/lucario_mega.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0448_lucario/lucario_mega.png"
     },
     {
       "aspects": ["mega", "shiny"],
       "model": "cobblemon:lucario_mega.geo",
-      "texture": "cobblemon:textures/pokemon/0448_lucario/lucario_mega_shiny.png",
-      "layers": []
+      "texture": "cobblemon:textures/pokemon/0448_lucario/lucario_mega_shiny.png"
     }
   ]
 }

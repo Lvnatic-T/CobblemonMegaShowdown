@@ -10,8 +10,6 @@
     },
     {
       "aspects": ["mega", "shiny"],
-      "poser": "cobblemon:mega_latias",
-      "model": "cobblemon:mega_latias.geo",
       "texture": "cobblemon:textures/pokemon/0380_latias/megalatias_shiny.png"
     }
   ]
