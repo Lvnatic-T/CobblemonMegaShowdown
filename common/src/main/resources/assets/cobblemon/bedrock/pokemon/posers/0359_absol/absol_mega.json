@@ -1,50 +1,57 @@
 {
   "portraitScale": 1.91,
-  "portraitTranslation": [
-    -0.91,
-    1.18,
-    0
-  ],
+  "portraitTranslation": [-0.91, 1.18, 0],
   "profileScale": 0.59,
-  "profileTranslation": [
-    -0.02,
-    0.85,
-    0
-  ],
+  "profileTranslation": [0.02, 0.85, 0],
   "rootBone": "absol",
   "animations": {
-    "cry": "q.bedrock_stateful('absol_mega', 'cry')"
+    "cry": "q.bedrock_stateful('absol_mega', 'cry')",
+    "recoil": "q.bedrock_stateful('absol_mega', 'recoil')",
+    "status": "q.bedrock_stateful('absol_mega', 'cry')"
   },
   "poses": {
-    "standing": {
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "FLOAT",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
       "animations": [
-        "q.look('head')",
+        "q.look('head_ai')",
+        "q.bedrock('absol_mega', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('absol_mega', 'blink', 2, 5, 1)"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "FLOAT", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head_ai')",
         "q.bedrock('absol_mega', 'ground_idle')"
       ],
-      "quirks": [
-        "q.bedrock_quirk('absol_mega', 'blink')"
-      ]
+      "quirks": ["q.bedrock_quirk('absol_mega', 'blink', 2, 5, 1)"]
+    },
+    "running": {
+      "poseTypes": ["WALK"],
+      "isBattle": false,
+      "transformTicks": 5,
+      "condition": "q.is_sprinting",
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('absol_mega', 'ground_run')"
+      ],
+      "quirks": ["q.bedrock_quirk('absol_mega', 'blink', 2, 5, 1)"]
     },
     "walking": {
-      "poseTypes": [
-        "WALK",
-        "SWIM"
-      ],
+      "poseTypes": ["WALK", "SWIM"],
+      "transformTicks": 5,
+      "condition": "!q.is_sprinting",
       "animations": [
-        "q.look('head')",
-        "q.bedrock('absol_mega', 'ground_idle')",
-        "q.quadruped_walk(1, 1, 'leg_front_left', 'leg_front_right', 'leg_back_left', 'leg_back_right')"
+        "q.look('head_ai')",
+        "q.bedrock('absol_mega', 'ground_walk')"
       ],
-      "quirks": [
-        "q.bedrock_quirk('absol_mega', 'blink')"
-      ]
+      "quirks": ["q.bedrock_quirk('absol_mega', 'blink', 2, 5, 1)"]
+    },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('absol_mega', 'sleep')"]
     }
   }
 }
