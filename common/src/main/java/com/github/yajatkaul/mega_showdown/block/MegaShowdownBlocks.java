@@ -132,22 +132,14 @@ public class MegaShowdownBlocks {
             MegaShowdownTabs.MEGA_TAB);
 
     public static final RegistrySupplier<Block> WISHING_STAR_CRYSTAL = registerBlock("wishing_star_crystal",
-            () -> new ParticleBlock(4,
-                    3,
-                    BlockBehaviour.Properties.of()
-                            .strength(1.5f)
-                            .sound(SoundType.MEDIUM_AMETHYST_BUD)
-                            .noOcclusion()
-                            .requiresCorrectToolForDrops()
-                            .pushReaction(PushReaction.IGNORE)
-                            .lightLevel((state) -> 15),
-                    true,
-                    Block.box(2, 0, 2, 14, 9, 14),
-                    new DustParticleOptions(
-                            new Vector3f(1.0f, 0.0f, 0.0f), // Color
-                            0.5f
-                    )
-            ), MegaShowdownTabs.DYNAMAX_TAB
+            () -> new WishingStar(BlockBehaviour.Properties.of()
+                    .strength(1.5f)
+                    .sound(SoundType.MEDIUM_AMETHYST_BUD)
+                    .noOcclusion()
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+                    .lightLevel((state) -> 15)
+            )
     );
 
     public static final RegistrySupplier<Block> DORMANT_CRYSTAL = registerBlockWithToolTip("dormant_crystal",
@@ -244,6 +236,10 @@ public class MegaShowdownBlocks {
         RegistrySupplier<Block> blockSupplier = BLOCKS.register(name, block);
         MegaShowdownItems.ITEMS.register(name, () -> new BlockItem(blockSupplier.get(), new Item.Properties().arch$tab(tab)));
         return blockSupplier;
+    }
+
+    private static RegistrySupplier<Block> registerBlock(String name, Supplier<Block> block) {
+        return BLOCKS.register(name, block);
     }
 
     private static RegistrySupplier<Block> registerBlockWithToolTip(String name, Supplier<Block> block, DeferredSupplier<CreativeModeTab> tab) {

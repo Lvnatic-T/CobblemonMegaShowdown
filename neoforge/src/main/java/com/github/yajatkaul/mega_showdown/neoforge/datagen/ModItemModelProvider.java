@@ -82,8 +82,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(MegaShowdownItems.HAWLUCHANITE.get());
         basicItem(MegaShowdownItems.MEGANIUMITE.get());
         basicItem(MegaShowdownItems.MEOWSTICITE.get());
-        basicItem(MegaShowdownItems.RAICHUNITEX.get());
-        basicItem(MegaShowdownItems.RAICHUNITEY.get());
+        basicItem(MegaShowdownItems.RAICHUNITE_X.get());
+        basicItem(MegaShowdownItems.RAICHUNITE_Y.get());
         basicItem(MegaShowdownItems.SCOVILLAINITE.get());
         basicItem(MegaShowdownItems.SKARMORITE.get());
         basicItem(MegaShowdownItems.STARMINITE.get());
@@ -97,6 +97,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(MegaShowdownItems.BARBARACITE.get());
         basicItem(MegaShowdownItems.DRAGALGITE.get());
         basicItem(MegaShowdownItems.FALINKSITE.get());
+        basicItem(MegaShowdownItems.ABSOLITE_Z.get());
+        basicItem(MegaShowdownItems.LUCARIONITE_Z.get());
+        basicItem(MegaShowdownItems.BAXCALIBRITE.get());
+        basicItem(MegaShowdownItems.GARCHOMPITE_Z.get());
+        basicItem(MegaShowdownItems.GOLISOPITE.get());
 
         basicItem(MegaShowdownItems.NORMAL_TERA_SHARD.get());
         basicItem(MegaShowdownItems.FIRE_TERA_SHARD.get());
@@ -326,5 +331,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(MegaShowdownItems.TERA_POUCH_BLACK.get());
 
         basicItem(MegaShowdownBlocks.MEGA_STONE_CRYSTAL.get().asItem());
+        basicItem(MegaShowdownBlocks.WISHING_STAR_CRYSTAL.get().asItem());
     }
 }

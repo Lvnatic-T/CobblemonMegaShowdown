@@ -4,6 +4,7 @@ import com.github.yajatkaul.mega_showdown.MegaShowdown;
 import com.github.yajatkaul.mega_showdown.block.block_entity.MegaStoneStandEntity;
 import com.github.yajatkaul.mega_showdown.block.block_entity.PedestalBlockEntity;
 import com.github.yajatkaul.mega_showdown.block.block_entity.ReassemblyUnitBlockEntity;
+import com.github.yajatkaul.mega_showdown.block.block_entity.WishingStarEntity;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -29,5 +30,10 @@ public class MegaShowdownBlockEntities {
     public static final RegistrySupplier<BlockEntityType<MegaStoneStandEntity>> MEGA_STONE_STAND_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("mega_stone_stand_be", () ->
                     BlockEntityType.Builder.of(MegaStoneStandEntity::new, MegaShowdownBlocks.MEGA_STONE_CRYSTAL.get()).build(null)
+            );
+
+    public static final RegistrySupplier<BlockEntityType<WishingStarEntity>> WISHINGSTAR_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("wishingstar_be", () ->
+                    BlockEntityType.Builder.of(WishingStarEntity::new, MegaShowdownBlocks.WISHING_STAR_CRYSTAL.get()).build(null)
             );
 }

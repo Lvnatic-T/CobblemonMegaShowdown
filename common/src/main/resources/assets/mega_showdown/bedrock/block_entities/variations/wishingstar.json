@@ -1,0 +1,13 @@
+{
+  "name": "mega_showdown:wishingstar",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "mega_showdown:wishingstar",
+      "model": "mega_showdown:wishingstar.geo",
+      "texture": "mega_showdown:textures/bedrock/block/wishingstar_block.png",
+      "layers": []
+    }
+  ]
+}

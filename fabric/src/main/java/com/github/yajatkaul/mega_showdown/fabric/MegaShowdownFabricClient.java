@@ -6,6 +6,7 @@ import com.github.yajatkaul.mega_showdown.block.MegaShowdownBlockEntities;
 import com.github.yajatkaul.mega_showdown.block.MegaShowdownBlocks;
 import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.MegaStoneStandRenderer;
 import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.PedestalBlockEntityRenderer;
+import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.WishingStarRenderer;
 import com.github.yajatkaul.mega_showdown.render.ItemRenderingLoader;
 import com.github.yajatkaul.mega_showdown.render.LayerDataLoader;
 import com.github.yajatkaul.mega_showdown.render.RegisterShaderEvent;
@@ -43,7 +44,6 @@ public final class MegaShowdownFabricClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(MegaShowdownBlocks.GRACIDEA_FLOWER.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(MegaShowdownBlocks.POTTED_GRACIDEA.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(MegaShowdownBlocks.REASSEMBLY_UNIT.get(), RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(MegaShowdownBlocks.WISHING_STAR_CRYSTAL.get(), RenderType.translucent());
 
         ResourceManagerHelper.registerBuiltinResourcePack(
                 ResourceLocation.fromNamespaceAndPath(MegaShowdown.MOD_ID, "gyaradosjumpingmega"),
@@ -61,6 +61,7 @@ public final class MegaShowdownFabricClient implements ClientModInitializer {
 
         BlockEntityRenderers.register(MegaShowdownBlockEntities.PEDESTAL_BLOCK_ENTITY.get(), PedestalBlockEntityRenderer::new);
         BlockEntityRenderers.register(MegaShowdownBlockEntities.MEGA_STONE_STAND_BLOCK_ENTITY.get(), MegaStoneStandRenderer::new);
+        BlockEntityRenderers.register(MegaShowdownBlockEntities.WISHINGSTAR_BLOCK_ENTITY.get(), WishingStarRenderer::new);
 
         RegisterShaderEvent.EVENT.register((event) -> {
             MSDRenderTypes.teraFire = event.create(

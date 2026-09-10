@@ -5,6 +5,7 @@ import com.github.yajatkaul.mega_showdown.MegaShowdownClient;
 import com.github.yajatkaul.mega_showdown.block.MegaShowdownBlockEntities;
 import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.MegaStoneStandRenderer;
 import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.PedestalBlockEntityRenderer;
+import com.github.yajatkaul.mega_showdown.block.block_entity.renderer.WishingStarRenderer;
 import com.github.yajatkaul.mega_showdown.render.ItemRenderingLoader;
 import com.github.yajatkaul.mega_showdown.render.LayerDataLoader;
 import com.github.yajatkaul.mega_showdown.render.RegisterShaderEvent;
@@ -165,6 +166,7 @@ public class MegaShowdownNeoForgeClient {
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(MegaShowdownBlockEntities.PEDESTAL_BLOCK_ENTITY.get(), PedestalBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(MegaShowdownBlockEntities.MEGA_STONE_STAND_BLOCK_ENTITY.get(), MegaStoneStandRenderer::new);
+        event.registerBlockEntityRenderer(MegaShowdownBlockEntities.WISHINGSTAR_BLOCK_ENTITY.get(), WishingStarRenderer::new);
     }
 
     @SubscribeEvent
