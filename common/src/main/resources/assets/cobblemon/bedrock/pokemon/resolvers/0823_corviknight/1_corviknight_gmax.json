@@ -6,7 +6,7 @@
       "aspects": [
         "gmax"
       ],
-      "poser": "cobblemon:corviknight",
+      "poser": "cobblemon:corviknight_gmax",
       "model": "cobblemon:gmax_corviknight.geo",
       "texture": "cobblemon:textures/pokemon/0823_corviknight/corviknight_gmax.png",
       "layers": []
