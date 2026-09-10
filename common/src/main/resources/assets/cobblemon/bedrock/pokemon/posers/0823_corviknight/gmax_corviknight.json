@@ -5,8 +5,8 @@
   "profileTranslation": [0, 1.2, 0],
   "rootBone": "corviknight",
   "animations": {
-    "cry": "q.bedrock_stateful('corviknight', 'cry')",
-    "recoil": "q.bedrock_stateful('corviknight', 'recoil')"
+    "cry": "q.bedrock_stateful('gmax_corviknight', 'cry')",
+    "recoil": "q.bedrock_stateful('gmax_corviknight', 'recoil')"
   },
   "poses": {
     "standing": {
@@ -15,10 +15,10 @@
       "animations": [
         "q.look('head', 1, 1)",
         "q.look('beard', -1, -1)",
-        "q.bedrock('corviknight', 'air_glide')"
+        "q.bedrock('gmax_corviknight', 'air_glide')"
       ],
       "quirks": [
-        "q.bedrock_quirk('corviknight', 'blink')"
+        "q.bedrock_quirk('gmax_corviknight', 'blink')"
       ],
       "transformTicks": 5
     }
