@@ -1,0 +1,9 @@
+{
+  "entryId": "cobblemon:lucario",
+  "forms": [
+    {
+      "displayForm": "Mega-Z",
+      "unlockForms": ["Mega-Z"]
+    }
+  ]
+}
