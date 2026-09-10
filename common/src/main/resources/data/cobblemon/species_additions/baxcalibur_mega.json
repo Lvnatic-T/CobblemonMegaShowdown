@@ -1,13 +1,35 @@
 {
   "target": "cobblemon:baxcalibur",
-  "features": ["mega_evolution"],
+  "hitbox": {
+    "width": 3,
+    "height": 2.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    }
+  },
+  "baseScale": 0.88,
   "forms": [
     {
       "name": "Mega",
-      "pokedex": ["cobblemon.species.baxcalibur-mega.desc"],
-      "abilities": ["thermalexchange", "h:thermalexchange"],
-      "labels": ["gen9", "mega"],
-      "aspects": ["mega"],
+      "pokedex": [
+        "cobblemon.species.baxcalibur-mega.desc"
+      ],
+      "abilities": [
+        "thermalexchange",
+        "h:thermalexchange"
+      ],
+      "labels": [
+        "gen9",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
       "battleOnly": true,
       "dynamaxBlocked": true,
       "baseStats": {

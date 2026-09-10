@@ -1,0 +1,31 @@
+{
+  "species": "cobblemon:frigibax",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:frigibax",
+      "model": "cobblemon:frigibax.geo",
+      "texture": "cobblemon:textures/pokemon/0996_frigibax/frigibax.png",
+      "layers": [
+      ] 
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon:textures/pokemon/0996_frigibax/frigibax_shiny.png",
+      "layers": [
+       
+      ]
+    },
+    {
+      "aspects": ["alpha_eyes"],
+      "layers": [
+        {
+          "name": "alpha_eyes",
+          "texture": "cobblemon:textures/pokemon/0996_frigibax/frigibax_alpha.png",
+          "emissive": true
+        }
+      ]
+    }
+  ]
+}

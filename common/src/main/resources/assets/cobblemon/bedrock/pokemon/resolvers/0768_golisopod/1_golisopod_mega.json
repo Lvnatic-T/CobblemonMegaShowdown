@@ -1,0 +1,27 @@
+{
+  "species": "cobblemon:golisopod",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": ["mega"],
+      "poser": "cobblemon:golisopod_mega",
+      "model": "cobblemon:golisopod_mega.geo",
+      "texture": "cobblemon:textures/pokemon/0768_golisopod/golisopod_mega.png",
+      "layers": []
+    },
+    {
+      "aspects": ["mega","shiny"],
+      "texture": "cobblemon:textures/pokemon/0768_golisopod/golisopod_mega_shiny.png"
+    },
+    {
+      "aspects": ["mega", "alpha_eyes"],
+      "layers": [
+        {
+          "name": "alpha_eyes",
+          "texture": "cobblemon:textures/pokemon/0768_golisopod/golisopod_mega_alpha.png",
+          "emissive": true
+        }
+      ]
+    }
+  ]
+}
