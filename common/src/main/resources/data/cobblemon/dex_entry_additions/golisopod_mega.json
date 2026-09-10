@@ -1,0 +1,9 @@
+{
+  "entryId": "cobblemon:golisopod",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    }
+  ]
+}
