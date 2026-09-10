@@ -1,6 +1,5 @@
 {
   "target": "cobblemon:absol",
-  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega-Z",
@@ -21,7 +20,27 @@
       "battleOnly": true,
       "dynamaxBlocked": true,
       "height": 12,
-      "weight": 490
+      "weight": 490,
+      "riding": {
+        "behaviours": {
+          "LAND": {
+            "key": "cobblemon:land/horse",
+            "rideSounds": [],
+            "stats": {
+              "ACCELERATION": "75-85",
+              "JUMP": "20-40",
+              "SKILL": "60-80",
+              "SPEED": "50-70",
+              "STAMINA": "35-55"
+            }
+          }
+        },
+        "seats": [
+          {
+            "locator": "seat_1"
+          }
+        ]
+      }
     }
   ]
 }
