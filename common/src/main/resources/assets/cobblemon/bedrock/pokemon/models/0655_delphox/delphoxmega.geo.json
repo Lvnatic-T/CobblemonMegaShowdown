@@ -6,7 +6,7 @@
 				"identifier": "geometry.delphox",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 9,
+				"visible_bounds_width": 10,
 				"visible_bounds_height": 7,
 				"visible_bounds_offset": [0, 2.5, 0]
 			},
@@ -1568,6 +1568,14 @@
 					]
 				},
 				{
+					"name": "locator_seat_2",
+					"parent": "mini_broom1",
+					"pivot": [29.5, 71.25, 29.4],
+					"locators": {
+						"seat_2": [29.5, 70.75, 29.4]
+					}
+				},
+				{
 					"name": "mini_broom2",
 					"parent": "mini_brooms",
 					"pivot": [-27.5, 48.25, -23.5],
@@ -1589,6 +1597,14 @@
 						{"origin": [-29.5, 48.25, -25.5], "size": [4, 4, 4], "uv": [43, 248]},
 						{"origin": [-29, 52.25, -25], "size": [3, 1, 3], "uv": [47, 231]}
 					]
+				},
+				{
+					"name": "locator_seat_1",
+					"parent": "mini_broom2",
+					"pivot": [-27.5, 47.35, -26.6],
+					"locators": {
+						"seat_1": [-27.5, 46.85, -26.6]
+					}
 				}
 			]
 		}
