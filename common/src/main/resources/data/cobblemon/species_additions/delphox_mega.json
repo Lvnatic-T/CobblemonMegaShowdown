@@ -16,6 +16,38 @@
         "special_defence": 125,
         "speed": 134
       },
+      "riding": {
+        "behaviours": {
+          "AIR": {
+            "key": "cobblemon:air/jet",
+            "stats": {
+              "SPEED": "65-85",
+              "ACCELERATION": "50-70",
+              "SKILL": "35-55",
+              "JUMP": "40-60",
+              "STAMINA": "60-75"
+            }
+          },
+          "LAND": {
+            "key": "cobblemon:land/horse",
+            "stats": {
+              "SPEED": "35-45",
+              "ACCELERATION": "50-70",
+              "SKILL": "35-55",
+              "JUMP": "10-25",
+              "STAMINA": "60-75"
+            }
+          }
+        },
+        "seats": [
+          {
+            "locator": "seat_1"
+          },
+          {
+            "locator": "seat_2"
+          }
+        ]
+      },
       "behaviour": {
         "moving": {
           "walk": {
