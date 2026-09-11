@@ -1,6 +1,6 @@
 {
   "portraitScale": 0.93,
-  "portraitTranslation": [-0.65, 2.72, 0.0],
+  "portraitTranslation": [-1.08, 2.61, 0.0],
   "profileScale": 0.28,
   "profileTranslation": [0.0, 1.2, 0.0],
   "rootBone": "corviknight",
@@ -15,7 +15,7 @@
       "animations": [
         "q.look('head', 1, 1)",
         "q.look('beard', -1, -1)",
-        "q.bedrock('corviknight', 'air_idle')"
+        "q.bedrock('corviknight', 'air_glide')"
       ],
       "quirks": [
         "q.bedrock_quirk('corviknight', 'blink')"
