@@ -331,6 +331,5 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(MegaShowdownItems.TERA_POUCH_BLACK.get());
 
         basicItem(MegaShowdownBlocks.MEGA_STONE_CRYSTAL.get().asItem());
-        basicItem(MegaShowdownBlocks.WISHING_STAR_CRYSTAL.get().asItem());
     }
 }
