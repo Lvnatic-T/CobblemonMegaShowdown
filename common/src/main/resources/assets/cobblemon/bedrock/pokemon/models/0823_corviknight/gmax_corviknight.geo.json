@@ -113,14 +113,6 @@
 					}
 				},
 				{
-					"name": "locator_head",
-					"parent": "head",
-					"pivot": [0, 51, -34.5],
-					"locators": {
-						"head": [0, 51, -34.5]
-					}
-				},
-				{
 					"name": "head2",
 					"parent": "head",
 					"pivot": [0, 50.64, -36.91447],
@@ -453,6 +445,22 @@
 						"beak": [0, 45.25, -47.25],
 						"physcial": [0, 45.25, -47.25],
 						"special": [0, 45.25, -47.25]
+					}
+				},
+				{
+					"name": "locator_head",
+					"parent": "head",
+					"pivot": [0, 51, -34.5],
+					"locators": {
+						"head": [0, 51, -34.5]
+					}
+				},
+				{
+					"name": "locator_clouds",
+					"parent": "head",
+					"pivot": [0, 51, -34.5],
+					"locators": {
+						"clouds_loc": [-2, 48, -34.5]
 					}
 				},
 				{

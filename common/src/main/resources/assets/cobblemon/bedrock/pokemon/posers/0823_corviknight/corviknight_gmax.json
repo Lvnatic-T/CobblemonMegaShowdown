@@ -1,7 +1,7 @@
 {
-  "portraitScale": 1,
-  "portraitTranslation": [-0.45, 3.0, 0.0],
-  "profileScale": 0.36,
+  "portraitScale": 0.93,
+  "portraitTranslation": [-1.08, 2.61, 0.0],
+  "profileScale": 0.28,
   "profileTranslation": [0.0, 1.2, 0.0],
   "rootBone": "corviknight",
   "animations": {
