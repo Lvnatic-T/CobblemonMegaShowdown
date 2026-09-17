@@ -50,6 +50,7 @@ public class AspectUtils {
                 new StringSpeciesFeature(aspect_split[0], aspect_split[1]).apply(pokemon);
             }
         }
+        pokemon.updateForm();
     }
 
     public static void applyProperties(Pokemon pokemon, Optional<String> propertyString) {
@@ -58,6 +59,7 @@ public class AspectUtils {
                     properties.apply(pokemon);
                 }
         );
+        pokemon.updateForm();
     }
 
     public static void appendRevertDataPokemon(Effect effect, List<String> aspects, Optional<String> properties, Pokemon pokemon, String tagName) {
